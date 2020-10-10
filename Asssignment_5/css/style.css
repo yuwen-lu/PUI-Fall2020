@@ -27,7 +27,7 @@ a:link, a:visited {
     background-image: url("../images/homepage-bakery.jpg");
     background-size: 100vw;
     background-position: -15vh;
-    height: 50vh;
+    height: 45vh;
     width: 100vw;
 }
 
@@ -35,7 +35,7 @@ a:link, a:visited {
     background: rgba(255, 255, 255, 0.8);
     position: relative;
     z-index: 1;
-    height: 50vh;
+    height: 45vh;
 }
 
 .home-icon {
@@ -50,7 +50,7 @@ a:link, a:visited {
 .homepage-title {
     text-transform: uppercase;
     text-align: center;
-    margin-top: 15vh;
+    margin-top: 5vh;
     font-size: 80px;
     letter-spacing: 2px;
 }
@@ -58,12 +58,13 @@ a:link, a:visited {
 
 #bottom-section {
     text-align: center;
-    padding: 3%;
+    padding: 1%;
     font-size: 25px;
 }
 
 .bottom-section-text {
     letter-spacing: 2px;
+    margin-top: 15px;
 }
 
 .location-icon {
@@ -79,7 +80,7 @@ a:link, a:visited {
 #homepage-image-container {
     width: 50vw;
     height: 18vh;
-    margin: 8vh auto;
+    margin: 3vh auto;
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
