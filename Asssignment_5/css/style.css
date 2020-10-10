@@ -1,0 +1,139 @@
+body {
+    font-family: 'Tinos', serif;
+    background-color: #fff8ec;
+    margin: 0;
+}
+
+a:link, a:visited {
+    color: #000;
+}
+
+.underlined {
+    text-decoration: underline;
+    text-decoration-color: #ecbf7c;
+    text-decoration-line: underline;
+    text-decoration-thickness: 5px;
+}
+
+.golden-icon {
+    filter: invert(90%) sepia(72%) saturate(2185%) hue-rotate(305deg) brightness(94%) contrast(87%);
+}
+
+.red-color {
+    color: #fd7057;
+}
+
+#top-section {
+    background-image: url("../images/homepage-bakery.jpg");
+    background-size: 100vw;
+    background-position: -15vh;
+    height: 50vh;
+    width: 100vw;
+}
+
+#top-section-overlay {
+    background: rgba(255, 255, 255, 0.8);
+    position: relative;
+    z-index: 1;
+    height: 50vh;
+}
+
+.home-icon {
+    margin: 20px;
+}
+
+.cart-icon {
+    margin: 20px;
+    float: right;
+}
+
+.homepage-title {
+    text-transform: uppercase;
+    text-align: center;
+    margin-top: 15vh;
+    font-size: 80px;
+    letter-spacing: 2px;
+}
+
+
+#bottom-section {
+    text-align: center;
+    padding: 3%;
+    font-size: 25px;
+}
+
+.bottom-section-text {
+    letter-spacing: 2px;
+}
+
+.location-icon {
+    vertical-align: bottom;
+    margin-right: 3px;
+}
+
+.shipping-icon {
+    vertical-align: bottom;
+    margin-right: 3px;
+}
+
+#homepage-image-container {
+    width: 50vw;
+    height: 18vh;
+    margin: 8vh auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+}
+
+.homepage-bottom-img {
+    width: 15vw;
+    border-radius: 20px;
+}
+
+#homepage-bottom-img-1 {
+    background-image: url("../images/cinnamon-roll-1.jpg");
+    background-position: center;
+    background-size: 20vw;
+    background-repeat: no-repeat;
+}
+
+#homepage-bottom-img-2 {
+    background-image: url("../images/cinnamon-roll-2.jpg");
+    background-position: center;
+    background-size: 20vw;
+    background-repeat: no-repeat;
+}
+
+#homepage-bottom-img-3 {
+    background-image: url("../images/cinnamon-roll-4.jpg");
+    background-position: center;
+    background-size: 20vw;
+    background-repeat: no-repeat;
+}
+
+.horizontal-flex-container {
+    display: flex;
+    align-items: center;
+}
+
+.v-shape-icon {
+    margin: 2px auto;
+    position: relative;
+    right: 10px;
+}
+
+.v-shape-icon-part-1 {
+    width: 20px;
+    transform: rotate(45deg);
+    border-bottom: 5px solid #ecbf7c;
+}
+
+.v-shape-icon-part-2 {
+    width: 20px;
+    transform: rotate(-45deg);
+    border-bottom: 5px solid #ecbf7c;
+    position: relative;
+    top: -5px;
+    left: 11px;
+}
