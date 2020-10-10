@@ -137,3 +137,14 @@ a:link, a:visited {
     top: -5px;
     left: 11px;
 }
+
+.contact-icon {
+    text-align: center;
+    position: fixed;
+    right: 2vw;
+    bottom: 2vh;
+}
+
+.contact-icon p {
+    margin-top: 0;
+}
