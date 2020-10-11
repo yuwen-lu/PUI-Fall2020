@@ -197,4 +197,24 @@ a:link, a:visited {
     width: 18vw;
     height: 38vh;
     margin: 3vh 2vw;
+    border-radius: 10%;
+}
+
+
+/* Footer */
+footer {
+    display: flex;
+    flex-wrap: nowrap;
+    background-color: #ecbf7c;
+    height: 30vh;
+}
+
+.footer-element {
+    margin: auto;
+    border: 2px solid black;
+    width: 30vw;
+}
+
+.footer-title {
+    font-size: 1.2rem;
 }
