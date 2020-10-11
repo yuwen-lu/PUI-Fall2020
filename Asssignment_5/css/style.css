@@ -63,7 +63,13 @@ a:link, a:visited {
 }
 
 .home-icon {
-    margin: 20px;
+    margin: 20px 10px 0 20px;
+}
+
+.home-icon-link span {
+    font-size: 1.5rem;
+    position: relative;
+    bottom: 0.4rem;
 }
 
 .cart-icon {
@@ -220,6 +226,7 @@ a:link, a:visited {
 
 .home-icon-text {
     vertical-align: center;
+    display: inline-block;
 }
 
 .cinnamon-roll-flex-container {
