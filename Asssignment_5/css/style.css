@@ -15,13 +15,29 @@ a:link, a:visited {
     text-decoration-thickness: 5px;
 }
 
+.one-point-five-line-height {
+    line-height: 1.5rem;
+}
+
 .golden-icon {
     filter: invert(90%) sepia(72%) saturate(2185%) hue-rotate(305deg) brightness(94%) contrast(87%);
+}
+
+.golden-color {
+    color: #ecbf7c;
 }
 
 .red-color {
     color: #fd7057;
 }
+
+.arrow-down {
+    width: 0; 
+    height: 0; 
+    border-left: 7px solid transparent;
+    border-right: 7px solid transparent;
+    border-top: 10px solid #ecbf7c;
+  }
 
 #top-section {
     background-image: url("../images/homepage-bakery.jpg");
@@ -155,16 +171,24 @@ a:link, a:visited {
 }
 
 .content-header-section {
-    background-image: url("../images/homepage-bakery.jpg");
     background-size: 100vw;
     background-position: -15vh;
     height: 40vh;
     width: 100vw;
 }
 
+#product-browsing-header {
+    background-image: url("../images/homepage-bakery.jpg");
+}
+
+#product-detail-header {
+    background-image: url("../images/bread-landlord.jpg");
+    background-position-y: 30%;
+}
+
 
 .content-header-section-overlay {
-    background: rgba(241, 227, 206, 0.8);
+    background: rgba(241, 227, 206, 0.9);
     position: relative;
     z-index: 1;
     height: 40vh;
@@ -299,4 +323,89 @@ footer {
     width: 1.3rem;
     vertical-align: bottom;
     margin-right: 0.3rem;
+}
+
+/* Product Detail Page */
+
+.back-button {
+    margin: 1rem 0 1rem 3vw;
+    display: flex;
+}
+
+.back-arrow {
+    filter: invert(90%) sepia(72%) saturate(2185%) hue-rotate(305deg) brightness(94%) contrast(87%);
+}
+
+.back-button p {
+    display: inline;
+    font-size: 1.5rem;
+}
+
+.product-detail {
+    display: flex;
+    justify-content: flex-end;
+    width: 80vw;
+    margin: auto;
+
+}
+
+.product-detail-section {
+    margin-top: 5vh;
+    margin-bottom: 20vh;
+}
+
+.product-detail-img {
+    width: 28vw;
+    border-radius: 30px;
+    margin-right: 10vw;
+
+}
+
+.product-detail-description {
+    width: 35vw;
+}
+
+.product-detail-title {
+    font-size: 2.5rem;
+    margin-top: 0;
+}
+
+/* dropdown */
+.dropdown {
+    border: 1px solid #ecbf7c;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 8rem;
+    border-radius: 5px;
+}
+
+.dropdown-placeholder {
+    margin: 0;
+    padding: 1px 5px;
+}
+
+.arrow-down-wrapper {
+    border-left: 1px solid #ecbf7c;
+    padding: 5px 3px;
+    border-radius: 0 5px 5px 0;
+    align-self: flex-end;
+}
+
+.add-to-cart-selection-options {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.add-to-cart-button {
+    font-family: 'Tinos', serif;
+    background-color: #FCF1D0;
+    text-decoration: none;
+    padding: 0.6em 1rem;
+    border-radius: 10px;
+    border: 0px solid #E0B472;
+    box-shadow: 3px 4px 4px #D7C89B;
 }
