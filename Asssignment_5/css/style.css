@@ -183,23 +183,99 @@ a:link, a:visited {
 }
 
 .cinnamon-roll-flex-container {
-    width: 70vw;
+    width: 85vw;
     margin: 10vh auto;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: space-evenly;
 
 }
+
+/* cinnamon roll card */
 
 .cinnamon-roll-card {
-    border: 2px solid black;
+    box-shadow: 5px 5px 10px #c9b9a1;
+    background-color: #FEF4E4;
     width: 18vw;
-    height: 38vh;
+    min-height: 38vh;
     margin: 3vh 2vw;
-    border-radius: 10%;
+    border-radius: 30px;
 }
 
+.cinnamon-roll-card-image {
+    background-size: cover;
+    width: 18vw;
+    height: 25vh;
+    border-radius: 10% 10% 0 0;
+}
+
+#cinnamon-roll-card-image-1 {
+    background-image: url("../images/cinnamon-roll-5.jpg");
+}
+
+#cinnamon-roll-card-image-2 {
+    background-image: url("../images/cinnamon-roll-3.jpg");
+    background-size: 460px;
+    background-position: 45% 55%;
+}
+
+#cinnamon-roll-card-image-3 {
+    background-image: url("../images/cinnamon-roll-6.jpg");
+    background-size: 400px;
+    background-repeat: no-repeat;
+    background-position: 50% 10%;
+}
+
+#cinnamon-roll-card-image-4 {
+    background-image: url("../images/cinnamon-roll-4.jpg");
+    background-size: 500px;
+    background-position: center;
+}
+
+#cinnamon-roll-card-image-5 {
+    background-image: url("../images/cinnamon-roll-7.jpg");
+    background-position: 90%;
+}
+
+#cinnamon-roll-card-image-6 {
+    background-image: url("../images/cinnamon-roll-2.jpg");
+    background-size: 500px;
+    background-position: 15%;
+}
+
+.cinnamon-roll-name {
+    text-align: center;
+    font-size: 1.4rem;
+    margin-top: 1rem;
+    margin-bottom: 0.5rem;
+}
+
+.cinnamon-roll-subname {
+    text-align: center;
+    margin: 0 auto 0.5rem;
+}
+
+.cinnamon-roll-card-text-container {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: space-evenly;
+    margin: auto 1rem 0.5rem 2rem;
+}
+.connamon-roll-card-details {
+    text-decoration: underline;
+}
+
+.cinnamon-roll-card-button {
+    font-family: 'Tinos', serif;
+    background-color: #FCF1D0;
+    text-decoration: none;
+    padding: 0.6em 0.8rem;
+    border-radius: 10px;
+    border: 2px solid #E0B472;
+    box-shadow: 3px 4px 4px #D7C89B;
+}
 
 /* Footer */
 footer {
