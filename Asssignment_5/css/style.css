@@ -192,7 +192,7 @@ a:link, a:visited {
 
 }
 
-/* cinnamon roll card */
+/* cinnamon roll cards */
 
 .cinnamon-roll-card {
     box-shadow: 5px 5px 10px #c9b9a1;
@@ -282,15 +282,21 @@ footer {
     display: flex;
     flex-wrap: nowrap;
     background-color: #ecbf7c;
-    height: 30vh;
+    min-height: 30vh;
+    padding: 0 5rem;
 }
 
 .footer-element {
-    margin: auto;
-    border: 2px solid black;
-    width: 30vw;
+    margin: 3rem auto;
 }
 
 .footer-title {
-    font-size: 1.2rem;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.footer-icon {
+    width: 1.3rem;
+    vertical-align: bottom;
+    margin-right: 0.3rem;
 }
