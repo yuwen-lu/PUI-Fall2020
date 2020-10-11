@@ -23,6 +23,10 @@ a:link, a:visited {
     line-height: 2.5rem;
 }
 
+.one-point-five-line-height {
+    line-height: 1.5rem;
+}
+
 .golden-icon {
     filter: invert(90%) sepia(72%) saturate(2185%) hue-rotate(305deg) brightness(94%) contrast(87%);
 }
