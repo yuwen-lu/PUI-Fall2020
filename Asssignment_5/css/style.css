@@ -80,7 +80,7 @@ a:link, a:visited {
 #homepage-image-container {
     width: 50vw;
     height: 18vh;
-    margin: 3vh auto;
+    margin: 5vh auto 6vh;
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
@@ -148,4 +148,53 @@ a:link, a:visited {
 
 .contact-icon p {
     margin-top: 0;
+}
+
+.contact-icon a {
+    text-decoration: none;
+}
+
+.content-header-section {
+    background-image: url("../images/homepage-bakery.jpg");
+    background-size: 100vw;
+    background-position: -15vh;
+    height: 40vh;
+    width: 100vw;
+}
+
+
+.content-header-section-overlay {
+    background: rgba(241, 227, 206, 0.8);
+    position: relative;
+    z-index: 1;
+    height: 40vh;
+}
+
+
+.content-page-title {
+    text-align: center;
+    font-size: 30px;
+    margin-top: 5vh;
+    letter-spacing: 1.5px;
+}
+
+.home-icon-text {
+    vertical-align: center;
+}
+
+.cinnamon-roll-flex-container {
+    width: 70vw;
+    margin: 10vh auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+}
+
+.cinnamon-roll-card {
+    border: 2px solid black;
+    width: 18vw;
+    height: 38vh;
+    margin: 3vh 2vw;
 }
