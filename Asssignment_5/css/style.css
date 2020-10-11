@@ -1,3 +1,7 @@
+html {
+    font-size: 1.2rem;
+}
+
 body {
     font-family: 'Tinos', serif;
     background-color: #fff8ec;
@@ -15,8 +19,8 @@ a:link, a:visited {
     text-decoration-thickness: 5px;
 }
 
-.one-point-five-line-height {
-    line-height: 1.5rem;
+.twice-line-height {
+    line-height: 2.5rem;
 }
 
 .golden-icon {
@@ -155,11 +159,19 @@ a:link, a:visited {
     left: 11px;
 }
 
+.contact-icon-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    position: -webkit-sticky;   /* Safari */
+    position: sticky;
+    bottom: 2vh;
+    margin-right: 1vw;
+}
+
 .contact-icon {
     text-align: center;
-    position: fixed;
-    right: 2vw;
-    bottom: 2vh;
+    
 }
 
 .contact-icon p {
@@ -197,8 +209,8 @@ a:link, a:visited {
 
 .content-page-title {
     text-align: center;
-    font-size: 30px;
-    margin-top: 5vh;
+    font-size: 2.5rem;
+    margin-top: 10vh;
     letter-spacing: 1.5px;
 }
 
@@ -208,7 +220,7 @@ a:link, a:visited {
 
 .cinnamon-roll-flex-container {
     width: 85vw;
-    margin: 10vh auto;
+    margin: 0 auto 10vh;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -355,10 +367,12 @@ footer {
 }
 
 .product-detail-img {
+    background-image: url("../images/cinnamon-roll-5-full.jpg");
+    background-size: cover;
+    background-position: center;
     width: 28vw;
     border-radius: 30px;
     margin-right: 10vw;
-
 }
 
 .product-detail-description {
@@ -372,12 +386,12 @@ footer {
 
 /* dropdown */
 .dropdown {
-    border: 1px solid #ecbf7c;
+    border: 2px solid #ecbf7c;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    width: 8rem;
+    width: 6rem;
     border-radius: 5px;
 }
 
@@ -387,7 +401,7 @@ footer {
 }
 
 .arrow-down-wrapper {
-    border-left: 1px solid #ecbf7c;
+    border-left: 2px solid #ecbf7c;
     padding: 5px 3px;
     border-radius: 0 5px 5px 0;
     align-self: flex-end;
@@ -398,14 +412,16 @@ footer {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    line-height: 1rem;
 }
 
 .add-to-cart-button {
     font-family: 'Tinos', serif;
     background-color: #FCF1D0;
     text-decoration: none;
-    padding: 0.6em 1rem;
+    padding: 0.6rem 1rem;
     border-radius: 10px;
     border: 0px solid #E0B472;
     box-shadow: 3px 4px 4px #D7C89B;
+    font-size: 1rem;
 }
