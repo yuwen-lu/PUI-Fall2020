@@ -149,6 +149,15 @@ a:link, a:visited {
     align-items: center;
 }
 
+.see-product-link {
+    background-color: #FCF1D0;
+    text-decoration: none;
+    padding: 1rem 2rem;
+    border-radius: 10px;
+    border: 2px solid #E0B472;
+    box-shadow: 3px 4px 4px #D7C89B;
+}
+
 .v-shape-icon {
     margin: 2px auto;
     position: relative;
