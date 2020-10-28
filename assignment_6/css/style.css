@@ -412,7 +412,7 @@ footer {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    align-items: top;
+    align-items: flex-start;
     width: 8rem;
     border-radius: 5px;
 }
