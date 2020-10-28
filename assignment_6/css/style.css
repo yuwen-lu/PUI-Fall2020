@@ -523,3 +523,13 @@ footer {
 .shopping-cart-item-price {
     margin: 0 2rem;
 }
+
+.delete-button {
+    border: none;
+    padding: 1rem;
+    background-image: url(../images/delete-icon.svg);
+    background-color: transparent;
+    background-size: cover;
+    cursor: pointer;
+    outline: none;
+}
