@@ -495,8 +495,8 @@ footer {
 .shopping-cart-item-img {
     height: 5rem;
     width: 5rem;
-    border-radius: 5px;
-    margin-right: 1rem;
+    border-radius: 1.5rem;
+    margin-right: 3rem;
 }
 
 #shopping-cart-original-image {
@@ -532,4 +532,27 @@ footer {
     background-size: cover;
     cursor: pointer;
     outline: none;
+}
+
+.total-amount {
+    text-align: right;
+    margin: 2rem;
+    font-size: 1.5rem;
+    letter-spacing: 2px;
+}
+
+.shopping-cart-checkout-button {
+    display: inline-block;
+    font-family: 'Tinos', serif;
+    background-color: #FCF1D0;
+    padding: 1rem 0.5rem;
+    width: 7rem;
+    border-radius: 10px;
+    border: 2px solid #E0B472;
+    box-shadow: 3px 4px 4px #D7C89B;
+    font-size: 1rem;
+    outline: none;
+    letter-spacing: 1px;
+    margin-left: auto;
+    margin-right: 2rem;
 }
