@@ -34,33 +34,22 @@
                     Contains peanuts</p>
 
                 <div class="add-to-cart-selection-options">
-                    <div class="dropdown">
-                        <div class="dropdown-appearance" id="quantity-dropdown">
-                            <p class="dropdown-placeholder">Quantity</p>
-                            <div class="arrow-down-wrapper"><div class="arrow-down"></div></div>
-                        </div>
-                        <div class="dropdown-content">
-                            <p>1 Roll</p>
-                            <p>3 Rolls</p>
-                            <p>6 Rolls</p>
-                            <p>12 Rolls</p>
-                        </div>
-                    </div>
-    
-                    <div class="dropdown">
-                        <div class="dropdown-appearance" id="glazing-dropdown">
-                            <p class="dropdown-placeholder">Glazing</p>
-                            <div class="arrow-down-wrapper"><div class="arrow-down"></div></div>
-                        </div>
-                        <div class="dropdown-content">
-                            <p>none</p>
-                            <p>sugar-milk</p>
-                            <p>vanilla-milk</p>
-                            <p>double-chocolate</p>
-                        </div>
-                    </div>
+                    <select name="quantity" class="dropdown-appearance" id="quantity-dropdown">
+                        <option disabled hidden selected>Quantity</option>
+                        <option value="1">1 roll</option>
+                        <option value="3">3 rolls</option>
+                        <option value="6">6 rolls</option>
+                        <option value="12">12 rolls</option>
+                    </select>
+                    <select name="glazing" class="dropdown-appearance" id="glazing-dropdown">
+                        <option disabled hidden selected>Glazing</option>
+                        <option value="none">none</option>
+                        <option value="sugar-milk">sugar-milk</option>
+                        <option value="vanilla-milk">vanilla-milk</option>
+                        <option value="double-chocolate">double-chocolate</option>
+                    </select>
 
-                    <button onclick="location.href='./product-detail.html'" type="button" class="add-to-cart-button">Add to Cart</button>
+                    <button onclick="location.href='./cart.html'" type="button" class="add-to-cart-button">Add to Cart</button>
                 </div>
 
             </div>
