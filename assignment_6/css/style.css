@@ -555,4 +555,17 @@ footer {
     letter-spacing: 1px;
     margin-left: auto;
     margin-right: 2rem;
+    cursor: pointer;
+}
+
+#cart-header {
+    background-image: url(../images/dough.jpg);
+    background-size: cover;
+    background-position: 50% 80%;
+}
+
+/* Override the previous overlay color, because it's too much for this specific image */
+
+#cart-header .content-header-section-overlay {
+    background: rgba(241, 227, 206, 0.6);
 }
