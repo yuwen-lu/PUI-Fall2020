@@ -20,16 +20,15 @@
             <img src="./images/arrow_back.svg" class="back-arrow" alt="">
             <p class="underlined">Back</p>
         </a>
-        <div class="product-detail">
-            <div class="product-detail-img">
-                <div class="quantity-display-box">
-                    <p>Quantity</p>
-                    <p class="quantity-display"></p>
+        <div class="product-detail" id="product-detail-original">
+            <div class="product-detail-img" id="product-detail-orignal-img">
+                <div class="quantity-display-box" id="quantity-display-box-original">
+                    <p><em>Quantity</em></p>
+                    <p class="quantity-display" id="quantity-display-original"></p>
                 </div>
-                <div class="glazing-display-box">
-                    <p>Glazing</p>
-                    <div class="glazing-display-img"></div>
-                    <p class="glazing-display-text"></p>
+                <div class="glazing-display-box" id="glazing-display-box-original">
+                    <p><em>Glazing</em></p>
+                    <p class="glazing-display-text" id="glazing-display-text-original"></p>
                 </div>
             </div>
             <div class="product-detail-description">
@@ -44,14 +43,14 @@
                     Contains peanuts</p>
 
                 <div class="add-to-cart-selection-options">
-                    <select name="quantity" class="dropdown-appearance" id="quantity-dropdown">
+                    <select name="quantity" class="dropdown-appearance" id="quantity-dropdown-original">
                         <option disabled hidden selected>Quantity</option>
                         <option value="1">1 roll</option>
                         <option value="3">3 rolls</option>
                         <option value="6">6 rolls</option>
                         <option value="12">12 rolls</option>
                     </select>
-                    <select name="glazing" class="dropdown-appearance" id="glazing-dropdown">
+                    <select name="glazing" class="dropdown-appearance" id="glazing-dropdown-original">
                         <option disabled hidden selected>Glazing</option>
                         <option value="None">none</option>
                         <option value="Sugar Milk">sugar milk</option>
@@ -59,7 +58,218 @@
                         <option value="Double Chocolate">double chocolate</option>
                     </select>
 
-                    <button onclick="location.href='./cart.html'" type="button" class="add-to-cart-button">Add to Cart</button>
+                    <button onclick="location.href='./cart.html'" type="button" class="add-to-cart-button">Add</button>
+                </div>
+
+            </div>
+        </div>
+        <div class="product-detail" id="product-detail-blackberry">
+            <div class="product-detail-img" id="product-detail-blackberry-img">
+                <div class="quantity-display-box" id="quantity-display-box-blackberry">
+                    <p><em>Quantity</em></p>
+                    <p class="quantity-display" id="quantity-display-blackberry"></p>
+                </div>
+                <div class="glazing-display-box" id="glazing-display-box-blackberry">
+                    <p><em>Glazing</em></p>
+                    <p class="glazing-display-text" id="glazing-display-text-blackberry"></p>
+                </div>
+            </div>
+            <div class="product-detail-description">
+                <p class="product-detail-title underlined">Blackberry</p>
+                <p>It's blackberry season baby!</p>
+                <p><span class="golden-color">$</span> 4.00 / roll</p>
+                <p class="one-point-five-line-height"><span class="underlined">Perfect for</span> <br>
+                    Berry lovers<br>
+                    students racing after deadlines</p>
+
+                <p class="one-point-five-line-height"><span class="underlined">Allergy information</span> <br>
+                    Contains peanuts and blackberry</p>
+
+                <div class="add-to-cart-selection-options">
+                    <select name="quantity" class="dropdown-appearance" id="quantity-dropdown-blackberry">
+                        <option disabled hidden selected>Quantity</option>
+                        <option value="1">1 roll</option>
+                        <option value="3">3 rolls</option>
+                        <option value="6">6 rolls</option>
+                        <option value="12">12 rolls</option>
+                    </select>
+                    <select name="glazing" class="dropdown-appearance" id="glazing-dropdown-blackberry">
+                        <option disabled hidden selected>Glazing</option>
+                        <option value="None">none</option>
+                        <option value="Sugar Milk">sugar milk</option>
+                        <option value="Vanilla Milk">vanilla milk</option>
+                        <option value="Double Chocolate">double chocolate</option>
+                    </select>
+
+                    <button onclick="location.href='./cart.html'" type="button" class="add-to-cart-button">Add</button>
+                </div>
+
+            </div>
+        </div>
+        <div class="product-detail" id="product-detail-walnut">
+            <div class="product-detail-img" id="product-detail-walnut-img">
+                <div class="quantity-display-box" id="quantity-display-box-walnut">
+                    <p><em>Quantity</em></p>
+                    <p class="quantity-display" id="quantity-display-walnut"></p>
+                </div>
+                <div class="glazing-display-box" id="glazing-display-box-walnut">
+                    <p><em>Glazing</em></p>
+                    <p class="glazing-display-text" id="glazing-display-text-walnut"></p>
+                </div>
+            </div>
+            <div class="product-detail-description">
+                <p class="product-detail-title underlined">Walnut</p>
+                <p>That beautiful nutty flavor</p>
+                <p><span class="golden-color">$</span> 4.00 / roll</p>
+                <p class="one-point-five-line-height"><span class="underlined">Perfect for</span> <br>
+                    students after another all-nighter</p>
+
+                <p class="one-point-five-line-height"><span class="underlined">Allergy information</span> <br>
+                    Contains peanuts</p>
+
+                <div class="add-to-cart-selection-options">
+                    <select name="quantity" class="dropdown-appearance" id="quantity-dropdown-walnut">
+                        <option disabled hidden selected>Quantity</option>
+                        <option value="1">1 roll</option>
+                        <option value="3">3 rolls</option>
+                        <option value="6">6 rolls</option>
+                        <option value="12">12 rolls</option>
+                    </select>
+                    <select name="glazing" class="dropdown-appearance" id="glazing-dropdown-walnut">
+                        <option disabled hidden selected>Glazing</option>
+                        <option value="None">none</option>
+                        <option value="Sugar Milk">sugar milk</option>
+                        <option value="Vanilla Milk">vanilla milk</option>
+                        <option value="Double Chocolate">double chocolate</option>
+                    </select>
+
+                    <button onclick="location.href='./cart.html'" type="button" class="add-to-cart-button">Add</button>
+                </div>
+
+            </div>
+        </div>
+        <div class="product-detail" id="product-detail-original-gluten-free">
+            <div class="product-detail-img" id="product-detail-orignal-gluten-free-img">
+                <div class="quantity-display-box" id="quantity-display-box-original-gluten-free">
+                    <p><em>Quantity</em></p>
+                    <p class="quantity-display" id="quantity-display-original-gluten-free"></p>
+                </div>
+                <div class="glazing-display-box" id="glazing-display-box-original-gluten-free">
+                    <p><em>Glazing</em></p>
+                    <p class="glazing-display-text" id="glazing-display-text-original-gluten-free"></p>
+                </div>
+            </div>
+            <div class="product-detail-description">
+                <p class="product-detail-title underlined">Original Gluten Free</p>
+                <p>The classic original receipe, but gluten free!</p>
+                <p><span class="golden-color">$</span> 4.00 / roll</p>
+                <p class="one-point-five-line-height"><span class="underlined">Perfect for</span> <br>
+                    People allergic to gluten</p>
+
+                <p class="one-point-five-line-height"><span class="underlined">Allergy information</span> <br>
+                    Contains peanuts</p>
+
+                <div class="add-to-cart-selection-options">
+                    <select name="quantity" class="dropdown-appearance" id="quantity-dropdown-original-gluten-free">
+                        <option disabled hidden selected>Quantity</option>
+                        <option value="1">1 roll</option>
+                        <option value="3">3 rolls</option>
+                        <option value="6">6 rolls</option>
+                        <option value="12">12 rolls</option>
+                    </select>
+                    <select name="glazing" class="dropdown-appearance" id="glazing-dropdown-original-gluten-free">
+                        <option disabled hidden selected>Glazing</option>
+                        <option value="None">none</option>
+                        <option value="Sugar Milk">sugar milk</option>
+                        <option value="Vanilla Milk">vanilla milk</option>
+                        <option value="Double Chocolate">double chocolate</option>
+                    </select>
+
+                    <button onclick="location.href='./cart.html'" type="button" class="add-to-cart-button">Add</button>
+                </div>
+
+            </div>
+        </div>
+        <div class="product-detail" id="product-detail-pumpkin-spice">
+            <div class="product-detail-img" id="product-detail-pumpkin-spice-img">
+                <div class="quantity-display-box" id="quantity-display-box-pumpkin-spice">
+                    <p><em>Quantity</em></p>
+                    <p class="quantity-display" id="quantity-display-pumpkin-spice"></p>
+                </div>
+                <div class="glazing-display-box" id="glazing-display-box-pumpkin-spice">
+                    <p><em>Glazing</em></p>
+                    <p class="glazing-display-text" id="glazing-display-text-pumpkin-spice"></p>
+                </div>
+            </div>
+            <div class="product-detail-description">
+                <p class="product-detail-title underlined">Pumpkin Spice</p>
+                <p>It's pumpkin season! <br><br>Falling for this seasonal pumpkin roll?</p>
+                <p><span class="golden-color">$</span> 4.00 / roll</p>
+                <p class="one-point-five-line-height"><span class="underlined">Perfect for</span> <br>
+                    Everyone!</p>
+
+                <p class="one-point-five-line-height"><span class="underlined">Allergy information</span> <br>
+                    Contains peanuts</p>
+
+                <div class="add-to-cart-selection-options">
+                    <select name="quantity" class="dropdown-appearance" id="quantity-dropdown-pumpkin-spice">
+                        <option disabled hidden selected>Quantity</option>
+                        <option value="1">1 roll</option>
+                        <option value="3">3 rolls</option>
+                        <option value="6">6 rolls</option>
+                        <option value="12">12 rolls</option>
+                    </select>
+                    <select name="glazing" class="dropdown-appearance" id="glazing-dropdown-pumpkin-spice">
+                        <option disabled hidden selected>Glazing</option>
+                        <option value="None">none</option>
+                        <option value="Sugar Milk">sugar milk</option>
+                        <option value="Vanilla Milk">vanilla milk</option>
+                        <option value="Double Chocolate">double chocolate</option>
+                    </select>
+
+                    <button onclick="location.href='./cart.html'" type="button" class="add-to-cart-button">Add</button>
+                </div>
+
+            </div>
+        </div>
+        <div class="product-detail" id="product-detail-caramel-peacan">
+            <div class="product-detail-img" id="product-detail-caramel-peacan-img">
+                <div class="quantity-display-box" id="quantity-display-box-caramel-peacan">
+                    <p><em>Quantity</em></p>
+                    <p class="quantity-display" id="quantity-display-caramel-peacan"></p>
+                </div>
+                <div class="glazing-display-box" id="glazing-display-box-caramel-peacan">
+                    <p><em>Glazing</em></p>
+                    <p class="glazing-display-text" id="glazing-display-text-caramel-peacan"></p>
+                </div>
+            </div>
+            <div class="product-detail-description">
+                <p class="product-detail-title underlined">Caramel Peacan</p>
+                <p>The classic receipe with a peacan tweak.</p>
+                <p><span class="golden-color">$</span> 4.00 / roll</p>
+                <p class="one-point-five-line-height"><span class="underlined">Perfect for</span> <br>
+                    Peacan lovers</p>
+
+                <p class="one-point-five-line-height"><span class="underlined">Allergy information</span> <br>
+                    Contains peanuts</p>
+
+                <div class="add-to-cart-selection-options">
+                    <select name="quantity" class="dropdown-appearance" id="quantity-dropdown-caramel-peacan">
+                        <option disabled hidden selected>Quantity</option>
+                        <option value="1">1 roll</option>
+                        <option value="3">3 rolls</option>
+                        <option value="6">6 rolls</option>
+                        <option value="12">12 rolls</option>
+                    </select>
+                    <select name="glazing" class="dropdown-appearance" id="glazing-dropdown-caramel-peacan">
+                        <option disabled hidden selected>Glazing</option>
+                        <option value="None">none</option>
+                        <option value="Sugar Milk">sugar milk</option>
+                        <option value="Vanilla Milk">vanilla milk</option>
+                        <option value="Double Chocolate">double chocolate</option>
+                    </select>
+
+                    <button onclick="location.href='./cart.html'" type="button" class="add-to-cart-button">Add</button>
                 </div>
 
             </div>

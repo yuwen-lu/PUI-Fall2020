@@ -333,6 +333,8 @@ a:link, a:visited {
     border-radius: 10px;
     border: 2px solid #E0B472;
     box-shadow: 3px 4px 4px #D7C89B;
+    outline: none;
+    cursor: pointer;
 }
 
 /* Footer */
@@ -376,7 +378,7 @@ footer {
 }
 
 .product-detail {
-    display: flex;
+    display: none;
     justify-content: flex-end;
     width: 80vw;
     margin: auto;
@@ -389,7 +391,6 @@ footer {
 }
 
 .product-detail-img {
-    background-image: url("../images/cinnamon-roll-5-full.jpg");
     background-size: cover;
     background-position: center;
     width: 28vw;
@@ -397,20 +398,51 @@ footer {
     margin-right: 10vw;
 }
 
+#product-detail-orignal-img {
+    background-image: url("../images/cinnamon-roll-5-full.jpg");
+}
+
+#product-detail-blackberry-img {
+    background-image: url("../images/cinnamon-roll-3.jpg");
+}
+
+#product-detail-walnut-img {
+    background-image: url("../images/cinnamon-roll-6.jpg");
+    background-size: 150%;
+    background-position-y: 0%;
+}
+
+#product-detail-orignal-gluten-free-img {
+    background-image: url("../images/cinnamon-roll-4.jpg");
+}
+
+#product-detail-pumpkin-spice-img {
+    background-image: url("../images/cinnamon-roll-7.jpg");
+    background-position-x: 75%;
+}
+
+#product-detail-caramel-peacan-img {
+    background-image: url("../images/cinnamon-roll-2.jpg");
+    background-position-x: 20%;
+}
+
 /* Below two classes are for the image overlay displaying current selection of users */
 
 /* But firstly, use flexbox to align them correctly */
 .product-detail-img {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    align-items: flex-end;
     justify-content: space-around;
+    padding-bottom: 1rem;
 }
 
 .quantity-display-box {
     display: none;
     margin: 3rem 1rem 0 auto;
+    padding: 10px;
     background-color: rgba(255, 255, 255, 0.8);
-    border: 1px solid #ecbf7c;
+    /* border: 1px solid #ecbf7c; */
     border-radius: 20px;
     width: 5rem;
     height: 6rem;
@@ -429,11 +461,12 @@ footer {
 .glazing-display-box {
     display: none;
     margin: 0 1rem 0 auto;
+    padding: 10px;
     background-color: rgba(255, 255, 255, 0.8);
     width: 5rem;
     height: 6rem;
     text-align: center;
-    border: 1px solid #ecbf7c;
+    /* border: 1px solid #ecbf7c; */
     border-radius: 20px;
     background-size: cover;
     background-position: center;
@@ -461,6 +494,7 @@ footer {
 .dropdown-appearance {
     font-family: 'Tinos', serif;
     font-size: 1.1rem;
+    margin-right: 0.5rem;
     border: 2px solid #ecbf7c;
     background-color: #fff8ec;
     height: 1.7rem;

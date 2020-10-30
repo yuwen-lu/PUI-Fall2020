@@ -1,9 +1,19 @@
-let quantitySelection = document.getElementById("quantity-dropdown");
-let glazingSelection = document.getElementById("glazing-dropdown");
+// retrieve the rollName variable in localStorage, 
+// set by clicking on certain roll item in product-browsing.js
 
-let quantityDisplay = document.getElementsByClassName("quantity-display")[0];
-let glazingDisplayImg = document.getElementsByClassName("glazing-display-img")[0];
-let glazingDisplayText = document.getElementsByClassName("glazing-display-text")[0];
+let rollName = localStorage.getItem("rollName");
+let productDetailElementIdName = "product-detail-" + rollName;
+document.getElementById(productDetailElementIdName).style.display = "flex";
+
+// dynamically display user selection info on image, product detail page
+
+let quantitySelection = document.getElementById("quantity-dropdown-" + rollName);
+let glazingSelection = document.getElementById("glazing-dropdown-" + rollName);
+
+let quantityDisplay = document.getElementById("quantity-display-" + rollName);
+console.log("quantity-display-" + rollName);
+let glazingDisplayText = document.getElementById("glazing-display-text-" + rollName);
+console.log("glazing-display-text-" + rollName);
 
 quantitySelection.addEventListener('change', () => {
     quantityDisplay.innerText = quantitySelection.options[quantitySelection.selectedIndex].text.split(" ")[0];
@@ -11,7 +21,6 @@ quantitySelection.addEventListener('change', () => {
 });
 
 glazingSelection.addEventListener('change', () => {
-    console.log(glazingSelection.selectedIndex);
     glazingDisplayText.innerText = glazingSelection.options[glazingSelection.selectedIndex].value;
     glazingDisplayText.parentElement.style.display = "inline-block";
 })
