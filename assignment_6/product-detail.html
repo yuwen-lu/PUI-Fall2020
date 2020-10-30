@@ -22,8 +22,15 @@
         </a>
         <div class="product-detail">
             <div class="product-detail-img">
-                <div class="quantity-display"></div>
-                <div class="glazing-display"></div>
+                <div class="quantity-display-box">
+                    <p>Quantity</p>
+                    <p class="quantity-display"></p>
+                </div>
+                <div class="glazing-display-box">
+                    <p>Glazing</p>
+                    <div class="glazing-display-img"></div>
+                    <p class="glazing-display-text"></p>
+                </div>
             </div>
             <div class="product-detail-description">
                 <p class="product-detail-title underlined">Original</p>
@@ -46,10 +53,10 @@
                     </select>
                     <select name="glazing" class="dropdown-appearance" id="glazing-dropdown">
                         <option disabled hidden selected>Glazing</option>
-                        <option value="none">none</option>
-                        <option value="sugar-milk">sugar-milk</option>
-                        <option value="vanilla-milk">vanilla-milk</option>
-                        <option value="double-chocolate">double-chocolate</option>
+                        <option value="None">none</option>
+                        <option value="Sugar Milk">sugar milk</option>
+                        <option value="Vanilla Milk">vanilla milk</option>
+                        <option value="Double Chocolate">double chocolate</option>
                     </select>
 
                     <button onclick="location.href='./cart.html'" type="button" class="add-to-cart-button">Add to Cart</button>
