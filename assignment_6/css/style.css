@@ -598,7 +598,7 @@ footer {
     margin-right: 3rem;
 }
 
-#shopping-cart-original-image {
+.shopping-cart-original-image {
     background-image: url(../images/cinnamon-roll-5.jpg);
     background-size: cover;
 }
@@ -633,6 +633,7 @@ footer {
 }
 
 .total-amount {
+    display: none;
     text-align: right;
     margin: 2rem;
     font-size: 1.5rem;
@@ -640,7 +641,7 @@ footer {
 }
 
 .shopping-cart-checkout-button {
-    display: inline-block;
+    display: none;
     font-family: 'Tinos', serif;
     background-color: #FCF1D0;
     padding: 1rem 0.5rem;
@@ -666,4 +667,10 @@ footer {
 
 #cart-header .content-header-section-overlay {
     background: rgba(241, 227, 206, 0.6);
+}
+
+.cart-empty-message {
+    display: none;
+    font-size: 2rem;
+    text-align: center;
 }

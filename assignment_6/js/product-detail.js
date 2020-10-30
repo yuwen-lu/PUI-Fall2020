@@ -61,6 +61,7 @@ addButton.addEventListener('click', () => {
     localStorage.setItem("productItems", JSON.stringify(currentItems));
 
     console.log(currentItems);
+    window.location.href = "../cart.html";
 })
 
 
