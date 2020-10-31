@@ -1,3 +1,4 @@
+/* Universal styling across all pages */
 html {
     font-size: 1.2rem;
 }
@@ -46,6 +47,7 @@ a:link, a:visited {
     border-top: 10px solid #ecbf7c;
 }
 
+/* The number indicating current number of items in cart */
 .cart-num {
     position: absolute;
     text-decoration: none;
@@ -59,6 +61,7 @@ a:link, a:visited {
 
 /* index page css */
 
+/* elements in the top section */
 #top-section {
     background-image: url("../images/homepage-bakery.jpg");
     background-size: 100vw;
@@ -98,6 +101,8 @@ a:link, a:visited {
 }
 
 
+/* styling for the bottom section */
+
 #bottom-section {
     text-align: center;
     padding: 1%;
@@ -118,6 +123,8 @@ a:link, a:visited {
     vertical-align: bottom;
     margin-right: 3px;
 }
+
+/* homepage carousel section */
 
 #homepage-image-container {
     width: 50vw;
@@ -160,6 +167,8 @@ a:link, a:visited {
     align-items: center;
 }
 
+/* see product button on homepage */
+
 .see-product-link {
     background-color: #FCF1D0;
     text-decoration: none;
@@ -189,6 +198,8 @@ a:link, a:visited {
     top: -5px;
     left: 11px;
 }
+
+/* contact button across all pages */
 
 .contact-icon-wrapper {
     display: flex;
@@ -271,12 +282,16 @@ a:link, a:visited {
     border-radius: 30px;
 }
 
+/* universal styling for all cinnamon roll cards */
+
 .cinnamon-roll-card-image {
     background-size: cover;
     width: 18vw;
     height: 25vh;
     border-radius: 10% 10% 0 0;
 }
+
+/* individual cinnamon roll card background images */
 
 #cinnamon-roll-card-image-1 {
     background-image: url("../images/cinnamon-roll-5.jpg");
@@ -311,6 +326,8 @@ a:link, a:visited {
     background-size: 500px;
     background-position: 15%;
 }
+
+/* styling of other cinnamon elements */
 
 .cinnamon-roll-name {
     text-align: center;
@@ -401,6 +418,8 @@ footer {
     margin-bottom: 20vh;
 }
 
+/* universal styling for all product detail images */
+
 .product-detail-img {
     background-size: cover;
     background-position: center;
@@ -408,6 +427,8 @@ footer {
     border-radius: 30px;
     margin-right: 10vw;
 }
+
+/* setting background images for product-specific elements */
 
 #product-detail-orignal-img {
     background-image: url("../images/cinnamon-roll-5-full.jpg");
@@ -582,6 +603,8 @@ footer {
     border-top: 2px solid #d9d9d9;
 }
 
+/* shopping cart item, breaking up into two sections */
+
 .shopping-cart-item {
     display: flex;
     padding: 1rem;
@@ -602,12 +625,16 @@ footer {
     margin-left: auto;
 }
 
+/* universal shopping cart image styling */
+
 .shopping-cart-item-img {
     height: 5rem;
     width: 5rem;
     border-radius: 1.5rem;
     margin-right: 3rem;
 }
+
+/* item-specific shopping cart images */
 
 .shopping-cart-original-image {
     background-image: url(../images/cinnamon-roll-5.jpg);
