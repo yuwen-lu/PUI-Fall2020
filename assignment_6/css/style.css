@@ -44,7 +44,18 @@ a:link, a:visited {
     border-left: 7px solid transparent;
     border-right: 7px solid transparent;
     border-top: 10px solid #ecbf7c;
-  }
+}
+
+.cart-num {
+    position: absolute;
+    text-decoration: none;
+    font-size: 1.5rem;
+    color: #fff;
+    right: 1.2rem;
+    top: 0.5rem;
+    margin: 0;
+    z-index: 1;
+}
 
 /* index page css */
 
@@ -601,6 +612,37 @@ footer {
 .shopping-cart-original-image {
     background-image: url(../images/cinnamon-roll-5.jpg);
     background-size: cover;
+}
+
+.shopping-cart-blackberry-image {
+    background-image: url(../images/cinnamon-roll-3.jpg);
+    background-size: 12rem;
+    background-position: 45% 55%;
+}
+
+.shopping-cart-walnut-image {
+    background-image: url(../images/cinnamon-roll-6.jpg);
+    background-size: 12rem;
+    background-repeat: no-repeat;
+    background-position: 53% 30%;
+}
+
+.shopping-cart-original-gluten-free-image {
+    background-image: url(../images/cinnamon-roll-4.jpg);
+    background-size: 280px;
+    background-position: 53% 60%;
+}
+
+.shopping-cart-pumpkin-spice-image {
+    background-image: url(../images/cinnamon-roll-7.jpg);
+    background-size: 17rem;
+    background-position: 70% 40%;
+}
+
+.shopping-cart-caramel-peacan-image {
+    background-image: url(../images/cinnamon-roll-2.jpg);
+    background-size: 12rem;
+    background-position: 10%;
 }
 
 .cart-dropdown-appearance {

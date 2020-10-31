@@ -4,6 +4,9 @@ let cartEmptyMessage = document.getElementsByClassName("cart-empty-message")[0];
 let checkoutButton = document.getElementsByClassName("shopping-cart-checkout-button")[0];
 let totalAmount = document.getElementsByClassName("total-amount")[0];
 
+// variable to calculate the total amount
+let totalAmountNum = 0;
+
 // function to create a new shopping cart item
 function createNewItem(name, quantity, glazing) {
 
@@ -29,14 +32,35 @@ function createNewItem(name, quantity, glazing) {
     itemName.classList.add("underlined");
     itemLeftContainer.appendChild(itemImage);
     itemLeftContainer.appendChild(itemName);
+
+    let text = document.createTextNode(name);
+    itemName.appendChild(text);
+    
+    // add item-specific image classes to itemImage
+    
     switch(name) {
         case "Original":
             itemImage.classList.add("shopping-cart-original-image");
-            let text = document.createTextNode("Original");
-            itemName.appendChild(text);
             break;
+        case "Blackberry":
+            itemImage.classList.add("shopping-cart-blackberry-image");
+            break;
+        case "Walnut":
+            itemImage.classList.add("shopping-cart-walnut-image");
+            break;
+        case "Original Gluten Free":
+            itemImage.classList.add("shopping-cart-original-gluten-free-image");
+            break;
+        case "Pumpkin Spice":
+            itemImage.classList.add("shopping-cart-pumpkin-spice-image");
+            break;
+        case "Caramel Peacan":
+            itemImage.classList.add("shopping-cart-caramel-peacan-image");
+            break;
+    
         default:
-            console.log("shenmewanyier");
+            itemImage.classList.add("shopping-cart-original-image");
+            break;
     }
 
     // content in the right container: two dropdowns, price, delete button
@@ -49,7 +73,7 @@ function createNewItem(name, quantity, glazing) {
     let quantityValues = [1, 3, 6, 12];
     // array of quantity dropdown texts
     let quantityTexts = ["1 roll", "3 rolls", "6 rolls", "12 rolls"];
-    for(let i = 0; i < quantityValues.length; i++) {
+    for(i in quantityValues) {
         let option = document.createElement("option");
         option.value = quantityValues[i];
         option.text = quantityTexts[i];
@@ -68,7 +92,7 @@ function createNewItem(name, quantity, glazing) {
     let glazingValues = ["None", "Sugar Milk", "Vanilla Milk", "Double Chocolate"];
     // array of glazing dropdown texts
     let glazingTexts = ["none", "sugar milk", "vanilla milk", "double chocolate"];
-    for(let i = 0; i < glazingValues.length; i++) {
+    for(i in glazingValues) {
         let option = document.createElement("option");
         option.value = glazingValues[i];
         option.textContent = glazingTexts[i];
@@ -85,10 +109,13 @@ function createNewItem(name, quantity, glazing) {
     let moneySymbol = document.createElement("span");
     moneySymbol.className = "golden-color";
     moneySymbol.textContent = "$";
-    // TODO: this should be dynamic based on user's choice
-    let priceNum = document.createTextNode("10.00");
+    // dynamically loading price based on user's choice
+    let priceNum = Number(quantity * 3.00);
+    // update the total amount on page
+    totalAmountNum += priceNum;
+    let priceText = document.createTextNode(" " + String(priceNum.toFixed(2)));
     priceContainer.appendChild(moneySymbol);
-    priceContainer.appendChild(priceNum);
+    priceContainer.appendChild(priceText);
     itemContainer.appendChild(priceContainer);
 
     // delete button
@@ -105,14 +132,32 @@ function createNewItem(name, quantity, glazing) {
 
 // retrieve localStorage for display items
 let items = JSON.parse(localStorage.getItem("productItems"));
-console.log(items);
 
+// if the shopping cart is not empty
 if(items) {
-    console.log(items);
+    let keys = Object.keys(items);
+    for(index in keys) {
+        let key = keys[index];
+        let [name, glazing] = key.split(",");
+        // Tweak the format of name a bit
+        nameList = name.split("-");
+        for (index in nameList) {
+            nameList[index] = nameList[index].charAt(0).toUpperCase() + nameList[index].slice(1);
+        }
+        name = nameList.join(" ");
+
+        let quantity = items[key];
+        createNewItem(name, quantity, glazing);
+    }
+
+    // calculate the total amount
+    let amountNode = document.createTextNode(String(totalAmountNum.toFixed(2)));
+    totalAmount.appendChild(amountNode);
     totalAmount.style.display = "inline-block";
     checkoutButton.style.display = "inline-block";
 }
 
+// if the cart is empty
 else {
     document.getElementsByClassName("cart-empty-message")[0].style.display = "block";
 }
