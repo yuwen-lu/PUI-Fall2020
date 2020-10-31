@@ -16,6 +16,6 @@ for (let i = 0; i < browsingCardButtons.length; i++) {
         rollName = rollName.toLowerCase().split(" ").join("-");
         console.log(rollName);
         localStorage.setItem("rollName", rollName);
-        window.location.href = "../product-detail.html";
+        window.location.href = "./product-detail.html";
     });
 }
