@@ -1,0 +1,745 @@
+/* Universal styling across all pages */
+html {
+    font-size: 1.2rem;
+}
+
+body {
+    font-family: 'Tinos', serif;
+    background-color: #fff8ec;
+    margin: 0;
+}
+
+a:link, a:visited {
+    color: #000;
+}
+
+.underlined {
+    text-decoration: underline;
+    text-decoration-color: #ecbf7c;
+    text-decoration-line: underline;
+}
+
+.twice-line-height {
+    line-height: 2.5rem;
+}
+
+.one-point-five-line-height {
+    line-height: 1.5rem;
+}
+
+.golden-icon {
+    filter: invert(90%) sepia(72%) saturate(2185%) hue-rotate(305deg) brightness(94%) contrast(87%);
+}
+
+.golden-color {
+    color: #ecbf7c;
+}
+
+.red-color {
+    color: #fd7057;
+}
+
+.arrow-down {
+    width: 0; 
+    height: 0; 
+    border-left: 7px solid transparent;
+    border-right: 7px solid transparent;
+    border-top: 10px solid #ecbf7c;
+}
+
+/* The number indicating current number of items in cart */
+.cart-num {
+    position: absolute;
+    text-decoration: none;
+    font-size: 1.5rem;
+    color: #fff;
+    right: 1.2rem;
+    top: 0.5rem;
+    margin: 0;
+    z-index: 1;
+}
+
+/* index page css */
+
+/* elements in the top section */
+#top-section {
+    background-image: url("../images/homepage-bakery.jpg");
+    background-size: 100vw;
+    background-position: -15vh;
+    height: 45vh;
+    width: 100vw;
+}
+
+#top-section-overlay {
+    background: rgba(255, 255, 255, 0.8);
+    position: relative;
+    z-index: 1;
+    height: 45vh;
+}
+
+.home-icon {
+    margin: 20px 10px 0 20px;
+}
+
+.home-icon-link span {
+    font-size: 1.5rem;
+    position: relative;
+    bottom: 0.4rem;
+}
+
+.cart-icon {
+    margin: 20px;
+    float: right;
+}
+
+.homepage-title {
+    text-transform: uppercase;
+    text-align: center;
+    margin-top: 5vh;
+    font-size: 80px;
+    letter-spacing: 2px;
+}
+
+
+/* styling for the bottom section */
+
+#bottom-section {
+    text-align: center;
+    padding: 1%;
+    font-size: 25px;
+}
+
+.bottom-section-text {
+    letter-spacing: 2px;
+    margin-top: 15px;
+}
+
+.location-icon {
+    vertical-align: bottom;
+    margin-right: 3px;
+}
+
+.shipping-icon {
+    vertical-align: bottom;
+    margin-right: 3px;
+}
+
+/* homepage carousel section */
+
+#homepage-image-container {
+    width: 50vw;
+    height: 18vh;
+    margin: 5vh auto 6vh;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+}
+
+.homepage-bottom-img {
+    width: 15vw;
+    border-radius: 20px;
+}
+
+#homepage-bottom-img-1 {
+    background-image: url("../images/cinnamon-roll-1.jpg");
+    background-position: center;
+    background-size: 20vw;
+    background-repeat: no-repeat;
+}
+
+#homepage-bottom-img-2 {
+    background-image: url("../images/cinnamon-roll-2.jpg");
+    background-position: center;
+    background-size: 20vw;
+    background-repeat: no-repeat;
+}
+
+#homepage-bottom-img-3 {
+    background-image: url("../images/cinnamon-roll-4.jpg");
+    background-position: center;
+    background-size: 20vw;
+    background-repeat: no-repeat;
+}
+
+.horizontal-flex-container {
+    display: flex;
+    align-items: center;
+}
+
+/* see product button on homepage */
+
+.see-product-link {
+    background-color: #FCF1D0;
+    text-decoration: none;
+    padding: 1rem 2rem;
+    border-radius: 10px;
+    border: 2px solid #E0B472;
+    box-shadow: 3px 4px 4px #D7C89B;
+}
+
+.v-shape-icon {
+    margin: 2px auto;
+    position: relative;
+    right: 10px;
+}
+
+.v-shape-icon-part-1 {
+    width: 20px;
+    transform: rotate(45deg);
+    border-bottom: 5px solid #ecbf7c;
+}
+
+.v-shape-icon-part-2 {
+    width: 20px;
+    transform: rotate(-45deg);
+    border-bottom: 5px solid #ecbf7c;
+    position: relative;
+    top: -5px;
+    left: 11px;
+}
+
+/* contact button across all pages */
+
+.contact-icon-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    position: -webkit-sticky;   /* Safari */
+    position: sticky;
+    bottom: 2vh;
+    margin-right: 1vw;
+}
+
+.contact-icon {
+    text-align: center;
+    
+}
+
+.contact-icon p {
+    margin-top: 0;
+}
+
+.contact-icon a {
+    text-decoration: none;
+}
+
+.content-header-section {
+    background-size: 100vw;
+    background-position: -15vh;
+    height: 40vh;
+    width: 100vw;
+}
+
+#product-browsing-header {
+    background-image: url("../images/homepage-bakery.jpg");
+}
+
+#product-detail-header {
+    background-image: url("../images/bread-landlord.jpg");
+    background-position-y: 30%;
+}
+
+
+.content-header-section-overlay {
+    background: rgba(241, 227, 206, 0.9);
+    position: relative;
+    z-index: 1;
+    height: 40vh;
+}
+
+
+.content-page-title {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-top: 10vh;
+    letter-spacing: 1.5px;
+}
+
+.home-icon-text {
+    vertical-align: center;
+    display: inline-block;
+}
+
+.cinnamon-roll-flex-container {
+    width: 85vw;
+    margin: 0 auto 10vh;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+
+}
+
+/* cinnamon roll cards */
+
+.cinnamon-roll-card {
+    box-shadow: 5px 5px 10px #c9b9a1;
+    background-color: #FEF4E4;
+    width: 18vw;
+    min-height: 38vh;
+    margin: 3vh 2vw;
+    border-radius: 30px;
+}
+
+/* universal styling for all cinnamon roll cards */
+
+.cinnamon-roll-card-image {
+    background-size: cover;
+    width: 18vw;
+    height: 25vh;
+    border-radius: 10% 10% 0 0;
+}
+
+/* individual cinnamon roll card background images */
+
+#cinnamon-roll-card-image-1 {
+    background-image: url("../images/cinnamon-roll-5.jpg");
+}
+
+#cinnamon-roll-card-image-2 {
+    background-image: url("../images/cinnamon-roll-3.jpg");
+    background-size: 460px;
+    background-position: 45% 55%;
+}
+
+#cinnamon-roll-card-image-3 {
+    background-image: url("../images/cinnamon-roll-6.jpg");
+    background-size: 400px;
+    background-repeat: no-repeat;
+    background-position: 50% 10%;
+}
+
+#cinnamon-roll-card-image-4 {
+    background-image: url("../images/cinnamon-roll-4.jpg");
+    background-size: 500px;
+    background-position: center;
+}
+
+#cinnamon-roll-card-image-5 {
+    background-image: url("../images/cinnamon-roll-7.jpg");
+    background-position: 90%;
+}
+
+#cinnamon-roll-card-image-6 {
+    background-image: url("../images/cinnamon-roll-2.jpg");
+    background-size: 500px;
+    background-position: 15%;
+}
+
+/* styling of other cinnamon elements */
+
+.cinnamon-roll-name {
+    text-align: center;
+    font-size: 1.4rem;
+    margin-top: 1rem;
+    margin-bottom: 0.5rem;
+}
+
+.cinnamon-roll-subname {
+    text-align: center;
+    margin: 0 auto 0.5rem;
+}
+
+.cinnamon-roll-card-text-container {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: space-evenly;
+    margin: 1rem 0.5rem 0.5rem 1rem;
+}
+.connamon-roll-card-details {
+    text-decoration: underline;
+}
+
+.cinnamon-roll-card-button {
+    font-family: 'Tinos', serif;
+    font-size: 0.9rem;
+    background-color: #FCF1D0;
+    text-decoration: none;
+    padding: 0.4em 0.8rem;
+    border-radius: 10px;
+    border: 2px solid #E0B472;
+    box-shadow: 3px 4px 4px #D7C89B;
+    outline: none;
+    cursor: pointer;
+}
+
+/* Footer */
+footer {
+    display: flex;
+    flex-wrap: nowrap;
+    background-color: #ecbf7c;
+    min-height: 30vh;
+    padding: 0 5rem;
+}
+
+.footer-element {
+    margin: 3rem auto;
+}
+
+.footer-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.footer-icon {
+    width: 1.3rem;
+    vertical-align: bottom;
+    margin-right: 0.3rem;
+}
+
+/* Product Detail Page */
+
+.back-button {
+    margin: 1rem 0 1rem 3vw;
+    display: flex;
+}
+
+.back-arrow {
+    filter: invert(90%) sepia(72%) saturate(2185%) hue-rotate(305deg) brightness(94%) contrast(87%);
+}
+
+.back-button p {
+    display: inline;
+    font-size: 1.5rem;
+}
+
+.product-detail {
+    display: none;
+    justify-content: flex-end;
+    width: 80vw;
+    margin: auto;
+
+}
+
+.product-detail-section {
+    margin-top: 5vh;
+    margin-bottom: 20vh;
+}
+
+/* universal styling for all product detail images */
+
+.product-detail-img {
+    background-size: cover;
+    background-position: center;
+    width: 28vw;
+    border-radius: 30px;
+    margin-right: 10vw;
+}
+
+/* setting background images for product-specific elements */
+
+#product-detail-orignal-img {
+    background-image: url("../images/cinnamon-roll-5-full.jpg");
+}
+
+#product-detail-blackberry-img {
+    background-image: url("../images/cinnamon-roll-3.jpg");
+}
+
+#product-detail-walnut-img {
+    background-image: url("../images/cinnamon-roll-6.jpg");
+    background-size: 150%;
+    background-position-y: 0%;
+}
+
+#product-detail-orignal-gluten-free-img {
+    background-image: url("../images/cinnamon-roll-4.jpg");
+}
+
+#product-detail-pumpkin-spice-img {
+    background-image: url("../images/cinnamon-roll-7.jpg");
+    background-position-x: 75%;
+}
+
+#product-detail-caramel-peacan-img {
+    background-image: url("../images/cinnamon-roll-2.jpg");
+    background-position-x: 20%;
+}
+
+/* Below two classes are for the image overlay displaying current selection of users */
+
+/* But firstly, use flexbox to align them correctly */
+.product-detail-img {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    justify-content: space-around;
+    padding-bottom: 1rem;
+}
+
+.quantity-display-box {
+    display: none;
+    margin: 3rem 1rem 0 auto;
+    padding: 10px;
+    background-color: rgba(255, 255, 255, 0.8);
+    /* border: 1px solid #ecbf7c; */
+    border-radius: 20px;
+    width: 5rem;
+    height: 6rem;
+    text-align: center;
+}
+
+.quantity-display-box p {
+    margin-bottom: 0.5rem;
+}
+
+.quantity-display {
+    margin-top: 0;
+    font-size: 2rem;
+}
+
+.glazing-display-box {
+    display: none;
+    margin: 0 1rem 0 auto;
+    padding: 10px;
+    background-color: rgba(255, 255, 255, 0.8);
+    width: 5rem;
+    height: 6rem;
+    text-align: center;
+    /* border: 1px solid #ecbf7c; */
+    border-radius: 20px;
+    background-size: cover;
+    background-position: center;
+}
+
+.glazing-display-box p {
+    margin-bottom: 0.8rem;
+}
+
+.glazing-display-text {
+    margin: 0;
+    font-size: 1.1rem;
+}
+
+.product-detail-description {
+    width: 35vw;
+}
+
+.product-detail-title {
+    font-size: 2.5rem;
+    margin-top: 0;
+}
+
+/* dropdown */
+.dropdown-appearance {
+    font-family: 'Tinos', serif;
+    font-size: 1.1rem;
+    margin-right: 0.5rem;
+    border: 2px solid #ecbf7c;
+    background-color: #fff8ec;
+    height: 1.7rem;
+    width: 10rem;
+    padding: 2px;
+    border-radius: 5px;
+    cursor: pointer;
+    outline: none;
+    
+}
+
+.dropdown-content {
+    position: absolute;
+    min-width: 8.2rem;
+    display: none;
+    z-index: 1;
+    border: 2px solid #ecbf7c;
+}
+
+.dropdown-content p {
+    margin: 0;
+    padding-left: 3px;
+    line-height: 1.3rem;
+    cursor: pointer;
+}
+
+.dropdown-content p:hover {
+    background-color: #ecbf7c;
+}
+
+.dropdown:hover .dropdown-content{
+    display: block;
+}
+
+.arrow-down-wrapper {
+    border-left: 2px solid #ecbf7c;
+    padding: 5px 3px;
+    border-radius: 0 5px 5px 0;
+    align-self: flex-end;
+}
+
+.add-to-cart-selection-options {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    line-height: 1rem;
+}
+
+.add-to-cart-button {
+    font-family: 'Tinos', serif;
+    background-color: #FCF1D0;
+    text-decoration: none;
+    padding: 0.6rem 1rem;
+    border-radius: 10px;
+    border: 0px solid #E0B472;
+    box-shadow: 3px 4px 4px #D7C89B;
+    font-size: 1rem;
+    outline: none;
+    cursor: pointer;
+}
+
+/* Shopping Cart Page */
+
+.shopping-cart {
+    display: flex;
+    flex-direction: column;
+    width: 80vw;
+    margin: auto;
+}
+
+.shopping-cart hr {
+    width: 80vw;
+    border-top: 2px solid #d9d9d9;
+}
+
+/* shopping cart item, breaking up into two sections */
+
+.shopping-cart-item {
+    display: flex;
+    padding: 1rem;
+    font-size: 1.3rem;
+}
+
+.shopping-cart-item-left {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-right: auto;
+}
+
+.shopping-cart-item-right {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-left: auto;
+}
+
+/* universal shopping cart image styling */
+
+.shopping-cart-item-img {
+    height: 5rem;
+    width: 5rem;
+    border-radius: 1.5rem;
+    margin-right: 3rem;
+}
+
+/* item-specific shopping cart images */
+
+.shopping-cart-original-image {
+    background-image: url(../images/cinnamon-roll-5.jpg);
+    background-size: cover;
+}
+
+.shopping-cart-blackberry-image {
+    background-image: url(../images/cinnamon-roll-3.jpg);
+    background-size: 12rem;
+    background-position: 45% 55%;
+}
+
+.shopping-cart-walnut-image {
+    background-image: url(../images/cinnamon-roll-6.jpg);
+    background-size: 12rem;
+    background-repeat: no-repeat;
+    background-position: 53% 30%;
+}
+
+.shopping-cart-original-gluten-free-image {
+    background-image: url(../images/cinnamon-roll-4.jpg);
+    background-size: 280px;
+    background-position: 53% 60%;
+}
+
+.shopping-cart-pumpkin-spice-image {
+    background-image: url(../images/cinnamon-roll-7.jpg);
+    background-size: 17rem;
+    background-position: 70% 40%;
+}
+
+.shopping-cart-caramel-peacan-image {
+    background-image: url(../images/cinnamon-roll-2.jpg);
+    background-size: 12rem;
+    background-position: 10%;
+}
+
+.cart-dropdown-appearance {
+    font-family: 'Tinos', serif;
+    font-size: 0.9rem;
+    margin-right: 0.5rem;
+    border: 2px solid #ecbf7c;
+    background-color: #fff8ec;
+    height: 1.7rem;
+    width: 8rem;
+    padding: 2px;
+    border-radius: 5px;
+    cursor: pointer;
+    outline: none;
+    
+}
+
+.shopping-cart-item-price {
+    margin: 0 1rem;
+}
+
+.delete-button {
+    border: none;
+    padding: 1rem;
+    background-image: url(../images/delete-icon.svg);
+    background-color: transparent;
+    background-size: cover;
+    cursor: pointer;
+    outline: none;
+}
+
+.total-amount {
+    display: none;
+    text-align: right;
+    margin: 2rem;
+    font-size: 1.5rem;
+    letter-spacing: 2px;
+}
+
+.shopping-cart-checkout-button {
+    display: none;
+    font-family: 'Tinos', serif;
+    background-color: #FCF1D0;
+    padding: 1rem 0.5rem;
+    width: 7rem;
+    border-radius: 10px;
+    border: 2px solid #E0B472;
+    box-shadow: 3px 4px 4px #D7C89B;
+    font-size: 1rem;
+    outline: none;
+    letter-spacing: 1px;
+    margin-left: auto;
+    margin-right: 2rem;
+    cursor: pointer;
+}
+
+#cart-header {
+    background-image: url(../images/dough.jpg);
+    background-size: cover;
+    background-position: 50% 80%;
+}
+
+/* Override the previous overlay color, because it's too much for this specific image */
+
+#cart-header .content-header-section-overlay {
+    background: rgba(241, 227, 206, 0.6);
+}
+
+.cart-empty-message {
+    display: none;
+    font-size: 2rem;
+    text-align: center;
+}
