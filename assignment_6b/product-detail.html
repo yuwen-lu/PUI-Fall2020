@@ -5,9 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Product Detail</title>
     <link rel="stylesheet" href="./css/style.css">
+    <!-- link to the font on the website, found on google fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Tinos:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
 </head>
 <body>
+    <!-- first section is for the header of the page -->
     <section class="content-header-section" id="product-detail-header">
         <div class="content-header-section-overlay">
             <a class="home-icon-link" href="./index.html"><img src="./images/cinammon-roll-icon.png" class="home-icon golden-icon" width="50" height="50" alt="HOME"><span class="home-icon-text"><span class="underlined">BUN</span> <span class="underlined">BUN</span></span></a>
@@ -18,11 +20,15 @@
             <p class="content-page-title"><span class="underlined">Product</span> Detail</p>
         </div>
     </section>
+    <!-- second section is the main content on page, the product details -->
     <section class="product-detail-section">
+        <!-- add the back button first -->
         <a href="./product-browsing.html" class="back-button">
             <img src="./images/arrow_back.svg" class="back-arrow" alt="">
             <p class="underlined">Back</p>
         </a>
+        <!-- Here I listed all the different products, their display are initally all set to none and will use product-detail.js to determine which to display -->
+        <!-- 1. original  -->
         <div class="product-detail" id="product-detail-original">
             <div class="product-detail-img" id="product-detail-orignal-img">
                 <div class="quantity-display-box" id="quantity-display-box-original">
@@ -66,6 +72,7 @@
 
             </div>
         </div>
+        <!-- 2. blackberry -->
         <div class="product-detail" id="product-detail-blackberry">
             <div class="product-detail-img" id="product-detail-blackberry-img">
                 <div class="quantity-display-box" id="quantity-display-box-blackberry">
@@ -109,6 +116,7 @@
 
             </div>
         </div>
+        <!-- 3. walnut -->
         <div class="product-detail" id="product-detail-walnut">
             <div class="product-detail-img" id="product-detail-walnut-img">
                 <div class="quantity-display-box" id="quantity-display-box-walnut">
@@ -151,6 +159,7 @@
 
             </div>
         </div>
+        <!-- 4. original gluten free -->
         <div class="product-detail" id="product-detail-original-gluten-free">
             <div class="product-detail-img" id="product-detail-orignal-gluten-free-img">
                 <div class="quantity-display-box" id="quantity-display-box-original-gluten-free">
@@ -193,6 +202,7 @@
 
             </div>
         </div>
+        <!-- 5. pumpkin-spice -->
         <div class="product-detail" id="product-detail-pumpkin-spice">
             <div class="product-detail-img" id="product-detail-pumpkin-spice-img">
                 <div class="quantity-display-box" id="quantity-display-box-pumpkin-spice">
@@ -235,6 +245,7 @@
 
             </div>
         </div>
+        <!-- 6. caramel peacan -->
         <div class="product-detail" id="product-detail-caramel-peacan">
             <div class="product-detail-img" id="product-detail-caramel-peacan-img">
                 <div class="quantity-display-box" id="quantity-display-box-caramel-peacan">
@@ -278,6 +289,7 @@
             </div>
         </div>
     </section>
+    <!-- contact icon on the bottom right of the screen -->
     <div class="contact-icon-wrapper">
         <div class="contact-icon golden-icon">
             <a href="./contact.html">
@@ -286,6 +298,7 @@
             </a>
         </div>
     </div>
+    <!-- footer section across all pages -->
     <footer>
         <div class="footer-element left-footer">
             <p class="footer-title">Contact Info</p>
@@ -307,6 +320,7 @@
             <p>(412) 687-2494</p>
         </div>
     </footer>
+    <!-- links to js scripts -->
     <script src="./js/product-detail.js"></script>
     <script src="./js/cart-item.js"></script>
 </body>
