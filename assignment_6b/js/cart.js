@@ -89,15 +89,17 @@ if(prevItems != null) {
             // quantity dropdown
             let quantityDropdown = document.createElement("select");
             quantityDropdown.classList.add("cart-dropdown-appearance");
+            // make it disabled, so that the user cannot change it during in the cart
+            quantityDropdown.disabled = true;
             itemContainer.appendChild(quantityDropdown);
             // array of quantity dropdown values
             let quantityValues = [1, 3, 6, 12];
             // array of quantity dropdown texts
             let quantityTexts = ["1 roll", "3 rolls", "6 rolls", "12 rolls"];
-            for(i in quantityValues) {
+            for(let j = 0; j < quantityValues.length; j++) {
                 let option = document.createElement("option");
-                option.value = quantityValues[i];
-                option.text = quantityTexts[i];
+                option.value = quantityValues[j];
+                option.text = quantityTexts[j];
                 // make sure to display users' previous selection of quantity
                 if (quantity === option.value)
                     option.selected = true;
@@ -108,6 +110,8 @@ if(prevItems != null) {
             // glazing dropdown
             let glazingDropdown = document.createElement("select");
             glazingDropdown.classList.add("cart-dropdown-appearance");
+            // make it disabled, so that the user cannot change it during in the cart
+            glazingDropdown.disabled = true;
             itemContainer.appendChild(glazingDropdown);
             // array of glazing dropdown values
             let glazingValues = ["None", "Sugar Milk", "Vanilla Milk", "Double Chocolate"];
