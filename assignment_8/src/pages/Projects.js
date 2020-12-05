@@ -7,7 +7,7 @@ export default function Projects() {
     return (
         <React.Fragment>
             <Header />
-            <div class="content-wrapper">Projects</div>
+            <div className="content-wrapper">Projects</div>
         </React.Fragment>
     )
 }

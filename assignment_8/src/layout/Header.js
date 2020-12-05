@@ -19,7 +19,7 @@ export default function Header() {
 const navStyle = {
     display: "flex",
     height: "10vh",
-    padding: "5vw",
+    padding: "4vw",
     alignItems: "center",
     justifyContent: "flex-end",
 }
@@ -28,5 +28,5 @@ const navLinkStyle = {
     color: "#fff",
     textDecoration: "none",
     border: "none",
-    margin: "2rem"
+    margin: "1.8rem"
 }
