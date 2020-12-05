@@ -1,15 +1,13 @@
-import React from 'react';
 import Header from '../layout/Header';
+import React from 'react';
 
+// Functional Component for the project page
 
-const Projects = () => {
+export default function Projects() {
     return (
         <React.Fragment>
             <Header />
-            <h1>Projects</h1>
+            <div class="content-wrapper">Projects</div>
         </React.Fragment>
     )
 }
-
-
-export default Projects;

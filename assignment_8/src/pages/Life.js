@@ -2,14 +2,11 @@ import React from 'react';
 import Header from '../layout/Header';
 
 
-const Projects = () => {
+export default function Life() {
     return (
         <React.Fragment>
             <Header />
-            <h1>Life</h1>
+            <div class="content-wrapper">Life</div>
         </React.Fragment>
     )
 }
-
-
-export default Projects;

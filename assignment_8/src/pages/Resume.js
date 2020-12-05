@@ -2,14 +2,11 @@ import React from 'react';
 import Header from '../layout/Header';
 
 
-const Projects = () => {
+export default function Resume() {
     return (
         <React.Fragment>
             <Header />
-            <h1>Resume</h1>
+            <div class="content-wrapper">Resume</div>
         </React.Fragment>
     )
 }
-
-
-export default Projects;

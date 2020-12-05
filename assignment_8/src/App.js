@@ -11,12 +11,13 @@ import Resume from './pages/Resume';
 import './App.css';
 
 
-function App() {
+export default function App() {
   return (
 
+    // Wrap everything in a React.Fragment because one component only allows one return component
 
     <React.Fragment>
-      
+      {/* the routes for different pages, <Link />s are in /layout/Header.js */}
       <Route path="/projects">
         <Projects />
       </Route>
@@ -33,8 +34,5 @@ function App() {
         <Home />
       </Route>
     </React.Fragment>
-
-  );
+  )
 }
-
-export default App;

@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
+// Functional Component for header, displayed on most all pages
 
 export default function Header() {
     return (
@@ -24,7 +25,7 @@ const navStyle = {
 }
 
 const navLinkStyle = {
-    color: "#000",
+    color: "#fff",
     textDecoration: "none",
     border: "none",
     margin: "2rem"

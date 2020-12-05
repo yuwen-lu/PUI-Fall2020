@@ -1,15 +1,17 @@
 import React from 'react';
 import Header from '../layout/Header';
+import '../App.css';
 
+// Functional Component for homepage
 
-const Projects = () => {
+export default function Home() {
     return (
         <React.Fragment>
             <Header />
-            <h1>Home</h1>
+            <div class="content-wrapper">
+                <h1>Home</h1>
+                <p>Hello</p>
+            </div>
         </React.Fragment>
     )
 }
-
-
-export default Projects;
