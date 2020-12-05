@@ -7,10 +7,10 @@ export default function Header() {
     return (
         <React.Fragment>
             <nav style={navStyle}>
-                <Link style={navLinkStyle} to="/">Home</Link>
-                <Link style={navLinkStyle} to="/projects">Projects</Link>
-                <Link style={navLinkStyle} to="/life">Life</Link>
-                <Link style={navLinkStyle} to="/resume">Resume</Link>
+                <Link className="nav-link" to="/">Home</Link>
+                <Link className="nav-link" to="/projects">Projects</Link>
+                <Link className="nav-link" to="/life">Life</Link>
+                <Link className="nav-link" to="/resume">Resume</Link>
             </nav>
         </React.Fragment>
     )
@@ -22,11 +22,4 @@ const navStyle = {
     padding: "4vw",
     alignItems: "center",
     justifyContent: "flex-end",
-}
-
-const navLinkStyle = {
-    color: "#fff",
-    textDecoration: "none",
-    border: "none",
-    margin: "1.8rem"
 }
