@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import Header from '../layout/Header';
+import Footer from '../layout/Footer';
 import '../App.css';
 import ProfilePic from '../resources/images/personal-profile.jpg';
 
@@ -39,6 +40,7 @@ export default function Home() {
                     <div id="social-media-icon-cloud" style={iconCloudStyle}>Social Media Icons</div>
                 </section>
             </div>
+            <Footer />
         </React.Fragment>
     )
 }

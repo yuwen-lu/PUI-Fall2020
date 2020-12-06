@@ -1,5 +1,6 @@
 import React from 'react';
 import Header from '../layout/Header';
+import Footer from '../layout/Footer';
 
 
 export default function Resume() {
@@ -7,6 +8,7 @@ export default function Resume() {
         <React.Fragment>
             <Header />
             <div class="content-wrapper">Resume</div>
+            <Footer />
         </React.Fragment>
     )
 }

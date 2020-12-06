@@ -1,5 +1,6 @@
 import React from 'react';
 import Header from '../layout/Header';
+import Footer from '../layout/Footer';
 
 
 export default function Life() {
@@ -7,6 +8,7 @@ export default function Life() {
         <React.Fragment>
             <Header />
             <div class="content-wrapper">Life</div>
+            <Footer />
         </React.Fragment>
     )
 }
