@@ -13,11 +13,11 @@ export default function Footer () {
         <div className="footerContainer" style={footerContainerStyle}>
             <p>Contact</p>
             <div className="footerIcons">
-                <a href={"mailto:yuwenlu@andrew.cmu.edu"} style={iconLinkStyle}><img src={EmailIcon} style={iconStyle}></img></a>
-                <a href={"https://twitter.com/yuwen_lu_"} style={iconLinkStyle}><img src={TwitterIcon} style={iconStyle}></img></a>
-                <a href={"https://www.instagram.com/yuwen_lu_/"} style={iconLinkStyle}><img src={InstagramIcon} style={iconStyle}></img></a>
-                <a href={"https://github.com/yuwen-lu/"} style={iconLinkStyle}><img src={GithubIcon} style={iconStyle}></img></a>
-                <a href={"https://www.linkedin.com/in/yuwen-lu/"} style={iconLinkStyle}><img src={LinkedinIcon} style={iconStyle}></img></a>
+                <a target="_blank" href={"mailto:yuwenlu@andrew.cmu.edu"} style={iconLinkStyle}><img src={EmailIcon} style={iconStyle}></img></a>
+                <a target="_blank" href={"https://twitter.com/yuwen_lu_"} style={iconLinkStyle}><img src={TwitterIcon} style={iconStyle}></img></a>
+                <a target="_blank" href={"https://www.instagram.com/yuwen_lu_/"} style={iconLinkStyle}><img src={InstagramIcon} style={iconStyle}></img></a>
+                <a target="_blank" href={"https://github.com/yuwen-lu/"} style={iconLinkStyle}><img src={GithubIcon} style={iconStyle}></img></a>
+                <a target="_blank" href={"https://www.linkedin.com/in/yuwen-lu/"} style={iconLinkStyle}><img src={LinkedinIcon} style={iconStyle}></img></a>
             </div>
             <p style={footerBottomTextStyle}>Design and developed by Yuwen Lu with React.</p>
             <p style={footerBottomTextStyle}>Last updated: Dec 2020</p>
