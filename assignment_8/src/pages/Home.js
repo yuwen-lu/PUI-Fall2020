@@ -2,6 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
+import Particles from 'react-particles-js';
 import Header from '../layout/Header';
 import Footer from '../layout/Footer';
 import '../App.css';
@@ -57,7 +58,48 @@ export default function Home() {
                     <div className="text-column" style={experienceTextStyle}>
                         My research interest is broadly in <strong>Social Computing</strong>. I seize to use mixed method research to <strong>understand people’s behavior</strong> at scale on social media platforms, and use UX design principles and programming to <strong>improve existing platforms</strong> and promote pro-social outcomes.
                     </div>
-                    <div id="social-media-icon-cloud" style={iconCloudStyle}>Social Media Icons</div>
+                    <div id="social-media-icon-cloud" style={iconCloudStyle}>
+                        <Particles 
+                            height="15rem"
+                            params={{
+                                particles: {
+                                    "number": {
+                                        "value": 15
+                                    },
+                                    "line_linked": {
+                                        "enable": false
+                                    },
+                                    shape: {
+                                        type: 'image',
+                                        "image": [
+                                            {
+                                                "src": "/icons/github.svg",
+                                            },
+                                            {
+                                                "src": "/icons/twitter.svg",
+                                            },
+                                            {
+                                                "src": "/icons/instagram.svg",
+                                            },
+                                            {
+                                                "src": "/icons/linkedin.svg",
+                                            }
+                                        ]
+                                    },
+                                    "size": {
+                                        "value": 30,
+                                        "random": false,
+                                        "anim": {
+                                            "enable": true,
+                                            "speed": 1,
+                                            "size_min": 20,
+                                            "sync": false
+                                        }
+                                    }
+                                }
+                            }}    
+                        />
+                    </div>
                 </section>
             </div>
             <Footer />
