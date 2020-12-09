@@ -68,7 +68,7 @@ export default function Home() {
 const sectionStyle = {
     display: "flex",
     justifyContent: "space-evenly",
-
+    alignItems: "center",
 }
 
 const introductionStyle = {
@@ -101,4 +101,8 @@ const experienceTextStyle = {
 
 const iconCloudStyle = {
     width: "45%",
+    height: "20rem",
+    backgroundColor: "rgba(49, 52, 66, 21)",
+    borderRadius: "1rem",
+    padding: "2rem",
 }
