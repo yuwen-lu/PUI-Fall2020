@@ -1,10 +1,10 @@
 import React from 'react';
 import { Route, Link } from 'react-router-dom';
-import EmailIcon from '../resources/images/icons/email.svg';
-import GithubIcon from '../resources/images/icons/github.svg';
-import InstagramIcon from '../resources/images/icons/instagram.svg';
-import LinkedinIcon from '../resources/images/icons/linkedin.svg';
-import TwitterIcon from '../resources/images/icons/twitter.svg';
+import EmailIcon from '../resources/icons/email.svg';
+import GithubIcon from '../resources/icons/github.svg';
+import InstagramIcon from '../resources/icons/instagram.svg';
+import LinkedinIcon from '../resources/icons/linkedin.svg';
+import TwitterIcon from '../resources/icons/twitter.svg';
 
 
 export default function Footer () {

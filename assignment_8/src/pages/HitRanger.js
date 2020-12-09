@@ -15,7 +15,7 @@ export default function HitRanger() {
                     </Link>
                 </div>
                 {/* the p tag needs a container, otherwise the width of p tag would be the same as the parent tag */}
-                <div className="title-wrapper" style={titleWrapperStyle}><p className="title" style={projectTitleStyle}>Goalplay Video Coach</p></div>
+                <div className="title-wrapper" style={titleWrapperStyle}><p className="title" style={projectTitleStyle}>Hit Ranger</p></div>
                 
             </div>
             <Footer />

@@ -41,7 +41,7 @@ export default function Home() {
                     data-aos-duration="1000"
                     data-aos-easing="ease-in-out">
                     <div id="skill-cloud" style={iconCloudStyle}>
-                        Hello
+                        <Particles />
                     </div>
                     <div className="text-column" style={experienceTextStyle}>
                         <p>
@@ -83,7 +83,13 @@ export default function Home() {
                                             },
                                             {
                                                 "src": "/icons/linkedin.svg",
-                                            }
+                                            },
+                                            {
+                                                "src": "/icons/youtube.svg",
+                                            },
+                                            {
+                                                "src": "/icons/weibo.svg",
+                                            },
                                         ]
                                     },
                                     "size": {
