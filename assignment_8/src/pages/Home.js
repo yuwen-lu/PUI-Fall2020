@@ -38,6 +38,7 @@ export default function Home() {
                     id="experience" 
                     style={sectionStyle} 
                     data-aos="fade-up"
+                    data-aos-offset="200"
                     data-aos-duration="1000"
                     data-aos-easing="ease-in-out">
                     <div id="skill-cloud" style={iconCloudStyle}>
@@ -53,6 +54,7 @@ export default function Home() {
                     id="interest" 
                     style={sectionStyle} 
                     data-aos="fade-up"
+                    data-aos-offset="200"
                     data-aos-duration="1000"
                     data-aos-easing="ease-in-out">
                     <div className="text-column" style={experienceTextStyle}>

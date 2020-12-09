@@ -54,6 +54,10 @@ section {
   color: #fff;
   text-decoration: none;
   border: none;
+  -moz-transition: color 0.2s ease-in-out;
+  -webkit-transition: color 0.2s ease-in-out;
+  -ms-transition: color 0.2s ease-in-out;
+  transition: color 0.2s ease-in-out;
 }
 
 .project-card-link:hover {
