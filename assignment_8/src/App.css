@@ -50,6 +50,17 @@ section {
   border-bottom: dotted 1px;
 }
 
+.project-card-link {
+  color: #fff;
+  text-decoration: none;
+  border: none;
+}
+
+.project-card-link:hover {
+  color: #E44C65;
+  text-decoration: none;
+}
+
 
 .content-wrapper {
   display: flex;
