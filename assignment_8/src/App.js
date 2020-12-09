@@ -8,7 +8,7 @@ import Projects from './pages/Projects';
 import Home from './pages/Home';
 import Life from './pages/Life';
 import Resume from './pages/Resume';
-import CovidTwitterWorkAnalysis from './pages/CovidTwitterWorkAnalysis';
+import HitRanger from './pages/HitRanger';
 import './App.css';
 
 
@@ -31,8 +31,8 @@ export default function App() {
         <Resume />
       </Route>
 
-      <Route path="/CovidTwitterWorkAnalysis">
-        <CovidTwitterWorkAnalysis />
+      <Route path="/HitRanger">
+        <HitRanger />
       </Route>
       
       <Route exact path="/">
