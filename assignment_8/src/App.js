@@ -9,7 +9,6 @@ import Home from './pages/Home';
 import Life from './pages/Life';
 import Resume from './pages/Resume';
 import HitRanger from './pages/HitRanger';
-import './App.css';
 
 
 export default function App() {
