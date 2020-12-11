@@ -26,9 +26,9 @@ export default function Home() {
                     data-aos-easing="ease-in-out">
                     <div className="text-column" style={introductionStyle}>
                         <p className="title">Hi there! I'm Yuwen.</p>
-                        <p>I am a <a target="_blank" href={"https://www.hcii.cmu.edu/academics/mhci"}>Master of Human-Computer Interaction</a> student at Carnegie Mellon University, School of Computer Science.</p>
+                        <p>I am a <a target="_blank" href={"https://www.hcii.cmu.edu/academics/mhci"}>Master of Human-Computer Interaction</a> student at Human-Computer Interaction Institute, Carnegie Mellon University.</p>
                         <p>I'm an aspired Social Media researcher and UX practitioner.</p>
-                        <p>Jump to my <Link to="/resume">Resume</Link>.</p>
+                        <p>Jump to my <Link to="/projects">Projects</Link> or my <Link to="/resume">Resume</Link>.</p>
                     </div>
                     <div className="profile-pic-container" style={profilePicContainerStyle}>
                         <img className="profile-pic" style={profilePicStyle} src={ProfilePic} alt="Me"></img>
@@ -42,7 +42,50 @@ export default function Home() {
                     data-aos-duration="1000"
                     data-aos-easing="ease-in-out">
                     <div id="skill-cloud" style={iconCloudStyle}>
-                        <Particles />
+                        <Particles 
+                            params={{
+                                particles: {
+                                    "number": {
+                                        "value": 5
+                                    },
+                                    "line_linked": {
+                                        "enable": false
+                                    },
+                                    shape: {
+                                        type: 'image',
+                                        "image": [
+                                            {
+                                                "src": "/icons/text-svg/behavioral-research.svg",
+                                            },
+                                            {
+                                                "src": "/icons/text-svg/user-centered-design.svg",
+                                            },
+                                            {
+                                                "src": "/icons/instagram.svg",
+                                            },
+                                            {
+                                                "src": "/icons/linkedin.svg",
+                                            },
+                                            {
+                                                "src": "/icons/youtube.svg",
+                                            },
+                                            {
+                                                "src": "/icons/weibo.svg",
+                                            },
+                                        ]
+                                    },
+                                    "size": {
+                                        "value": 30,
+                                        "random": false,
+                                        "anim": {
+                                            "enable": true,
+                                            "speed": 1,
+                                            "size_min": 20,
+                                            "sync": false
+                                        }
+                                    }
+                                }
+                            }}/>
                     </div>
                     <div className="text-column" style={experienceTextStyle}>
                         <p>
