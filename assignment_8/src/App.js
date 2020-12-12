@@ -9,6 +9,7 @@ import Home from './pages/Home';
 import Life from './pages/Life';
 import Resume from './pages/Resume';
 import HitRanger from './pages/HitRanger';
+import Goalplay from './pages/Goalplay';
 
 
 export default function App() {
@@ -32,6 +33,10 @@ export default function App() {
 
       <Route path="/HitRanger">
         <HitRanger />
+      </Route>
+
+      <Route path="/goalplay">
+        <Goalplay />
       </Route>
       
       <Route exact path="/">

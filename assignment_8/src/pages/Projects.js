@@ -5,7 +5,7 @@ import 'aos/dist/aos.css';
 import Header from '../layout/Header';
 import Footer from '../layout/Footer';
 import ProjectCard from '../layout/ProjectCard';
-import  HitRanger from './HitRanger';
+import Goalplay from './Goalplay';
 
 
 // Functional Component for the project page
@@ -22,7 +22,7 @@ export default function Projects() {
                 <div className="project-card-wrapper" style={projectCardWrapperStyle}>
                     <Link 
                         className="project-card-link" 
-                        to="/HitRanger" 
+                        to="/Goalplay" 
                         data-aos="fade-up"
                         data-aos-duration="1000"
                         data-aos-easing="ease-in-out">
@@ -36,7 +36,7 @@ export default function Projects() {
                     </Link>
                     <Link 
                         className="project-card-link" 
-                        to="/HitRanger"
+                        to="/Goalplay"
                         data-aos="fade-up"
                         data-aos-duration="1000"
                         data-aos-easing="ease-in-out"
@@ -51,7 +51,7 @@ export default function Projects() {
                     </Link>
                     <Link 
                         className="project-card-link" 
-                        to="/HitRanger"
+                        to="/Goalplay"
                         data-aos="fade-up"
                         data-aos-offset="200"
                         data-aos-duration="1000"
@@ -66,7 +66,7 @@ export default function Projects() {
                     </Link>
                     <Link 
                         className="project-card-link" 
-                        to="/HitRanger"
+                        to="/Goalplay"
                         data-aos="fade-up"
                         data-aos-offset="200"
                         data-aos-duration="1000"
@@ -81,7 +81,7 @@ export default function Projects() {
                     </Link>
                     <Link 
                         className="project-card-link" 
-                        to="/HitRanger"
+                        to="/Goalplay"
                         data-aos="fade-up"
                         data-aos-offset="200"
                         data-aos-duration="1000"

@@ -35,5 +35,5 @@ const projectTitleStyle = {
 
 const backIconStyle = {
     position: "relative",
-    top: "2px",
+    top: "-2px",
 }
