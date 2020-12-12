@@ -2,33 +2,34 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import Header from '../layout/Header';
 import Footer from '../layout/Footer';
-import BackButton from '../resources/icons/arrow-back.svg';
 import LocationIcon from '../resources/icons/location.svg';
 import { Container, Row, Col } from 'react-bootstrap';
+import { useMediaQuery } from 'react-responsive';
 
 export default function HitRanger() {
+
+    // responsiveness, hide left column if on phone
+    const isNotPhone = useMediaQuery({
+        query: '(min-width: 576px)'
+    });
+
     return (
         <React.Fragment>
             <Header />
             <Container>
-                <div className="back-button">
-                    <Link to="/Projects">
-                        <img src={BackButton} style={backIconStyle}></img>Back
-                    </Link>
-                </div>
                 {/* the p tag needs a container, otherwise the width of p tag would be the same as the parent tag */}
                 <div className="title-wrapper" style={titleWrapperStyle}><p className="title" style={projectTitleStyle}>Life Events</p></div>
                 <Row>
-                    <Col style={topLeftColStyle}></Col>
+                    {isNotPhone && <Col style={topLeftColStyle}></Col>}
                     <Col style={rightColStyle}></Col>
                 </Row>
                 <Row>
-                    <Col style={leftColStyle}>
+                    {isNotPhone && <Col style={leftColStyle}>
                         <div style={locationColWrapperStyle}>
                             <img src={LocationIcon} style={locationIconStyle}></img>
                             Pittsburgh, PA
                         </div>
-                    </Col>
+                    </Col>}
                     <Col style={rightColStyle}>
                         <div style={dateWrapperStyle}>
                             <p style={dateStyle}>Aug 2020</p>
@@ -41,12 +42,12 @@ export default function HitRanger() {
                     </Col>
                 </Row>
                 <Row>
-                    <Col style={leftColStyle}>
+                    {isNotPhone && <Col style={leftColStyle}>
                         <div style={locationColWrapperStyle}>
                             <img src={LocationIcon} style={locationIconStyle}></img>
                             virtually in Dalian, China
                         </div>
-                    </Col>
+                    </Col>}
                     <Col style={rightColStyle}>
                         <div style={dateWrapperStyle}>
                             <p style={dateStyle}>June 2020</p>
@@ -59,12 +60,12 @@ export default function HitRanger() {
                     </Col>
                 </Row>
                 <Row>
-                    <Col style={leftColStyle}>
+                    {isNotPhone && <Col style={leftColStyle}>
                         <div style={locationColWrapperStyle}>
                             {/* <img src={LocationIcon} style={locationIconStyle}></img>
                             Pittsburgh, PA */}
                         </div>
-                    </Col>
+                    </Col>}
                     <Col style={rightColStyle}>
                         <div style={dateWrapperStyle}>
                             <p style={dateStyle}>Mar 2020</p>
@@ -76,12 +77,12 @@ export default function HitRanger() {
                     </Col>
                 </Row>
                 <Row>
-                    <Col style={leftColStyle}>
+                    {isNotPhone && <Col style={leftColStyle}>
                         <div style={locationColWrapperStyle}>
                             <img src={LocationIcon} style={locationIconStyle}></img>
                             Irvine, CA
                         </div>
-                    </Col>
+                    </Col>}
                     <Col style={rightColStyle}>
                         <div style={dateWrapperStyle}>
                             <p style={dateStyle}>Dec 2019</p>
@@ -93,12 +94,12 @@ export default function HitRanger() {
                     </Col>
                 </Row>
                 <Row>
-                    <Col style={leftColStyle}>
+                    {isNotPhone && <Col style={leftColStyle}>
                         <div style={locationColWrapperStyle}>
                             <img src={LocationIcon} style={locationIconStyle}></img>
                             Boston, MA
                         </div>
-                    </Col>
+                    </Col>}
                     <Col style={rightColStyle}>
                         <div style={dateWrapperStyle}>
                             <p style={dateStyle}>Oct 2019</p>
@@ -110,12 +111,12 @@ export default function HitRanger() {
                     </Col>
                 </Row>
                 <Row>
-                    <Col style={leftColStyle}>
+                    {isNotPhone && <Col style={leftColStyle}>
                         <div style={locationColWrapperStyle}>
                             <img src={LocationIcon} style={locationIconStyle}></img>
                             Nantong, Jiangsu, China
                         </div>
-                    </Col>
+                    </Col>}
                     <Col style={rightColStyle}>
                         {/* add in an empty div here since there's no date for this row */}
                         <div style={{width: "10rem"}}></div>
@@ -126,12 +127,12 @@ export default function HitRanger() {
                     </Col>
                 </Row>
                 <Row>
-                    <Col style={leftColStyle}>
+                    {isNotPhone && <Col style={leftColStyle}>
                         <div style={locationColWrapperStyle}>
                             {/* <img src={LocationIcon} style={locationIconStyle}></img>
                             Boston, MA */}
                         </div>
-                    </Col>
+                    </Col>}
                     <Col style={{...rightColStyle, height: "10rem"}}>
                         {/* <div style={dateWrapperStyle}>
                             <p style={dateStyle}>Oct 2019</p>
@@ -143,12 +144,12 @@ export default function HitRanger() {
                     </Col>
                 </Row>
                 <Row>
-                    <Col style={leftColStyle}>
+                    {isNotPhone && <Col style={leftColStyle}>
                         <div style={locationColWrapperStyle}>
                             <img src={LocationIcon} style={locationIconStyle}></img>
                             Munich, Germany
                         </div>
-                    </Col>
+                    </Col>}
                     <Col style={rightColStyle}>
                         <div style={dateWrapperStyle}>
                             <p style={dateStyle}>Apr 2019</p>
@@ -160,12 +161,12 @@ export default function HitRanger() {
                     </Col>
                 </Row>
                 <Row>
-                    <Col style={leftColStyle}>
+                    {isNotPhone && <Col style={leftColStyle}>
                         <div style={locationColWrapperStyle}>
                             <img src={LocationIcon} style={locationIconStyle}></img>
                             New York, NY
                         </div>
-                    </Col>
+                    </Col>}
                     <Col style={rightColStyle}>
                         <div style={dateWrapperStyle}>
                             <p style={dateStyle}>Mar 2019</p>
@@ -177,7 +178,7 @@ export default function HitRanger() {
                     </Col>
                 </Row>
                 <Row>
-                    <Col style={{...topLeftColStyle, margin: "0.3rem auto"}}></Col>
+                    {isNotPhone && <Col style={{...topLeftColStyle, margin: "0.3rem auto"}}></Col>}
                     <Col style={rightColStyle}></Col>
                 </Row>
             </Container>
