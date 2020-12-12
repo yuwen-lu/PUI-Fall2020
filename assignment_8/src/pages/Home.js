@@ -61,7 +61,7 @@ export default function Home() {
                                                 "src": "/icons/text-svg/user-centered-design.svg",
                                             },
                                             {
-                                                "src": "/icons/instagram.svg",
+                                                "src": "/icons/text-svg/design.svg",
                                             },
                                             {
                                                 "src": "/icons/linkedin.svg",
@@ -75,7 +75,7 @@ export default function Home() {
                                         ]
                                     },
                                     "size": {
-                                        "value": 30,
+                                        "value": 40,
                                         "random": false,
                                         "anim": {
                                             "enable": true,
@@ -89,7 +89,7 @@ export default function Home() {
                     </div>
                     <div className="text-column" style={experienceTextStyle}>
                         <p>
-                        Previously, I worked with Professor <a href={"https://www.ics.uci.edu/~gmark/Home_page/Welcome.html"}>Gloria Mark</a> at the University of California, Irvine and <a href={"https://acw.io/"}>Alex Williams</a> at the University of Tennessee, Knoxville as undergraduate research assistant.
+                        Previously, I worked with Professor <a href={"https://www.ics.uci.edu/~gmark/Home_page/Welcome.html"}>Gloria Mark</a> at the University of California, Irvine and <a href={"https://acw.io/"}>Alex Williams</a> at the University of Tennessee, Knoxville as undergraduate research assistant. See my <Link to="/projects">projects</Link> here.
                         </p>
                     </div>
                 </section>
