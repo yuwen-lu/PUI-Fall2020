@@ -23,7 +23,10 @@ export default function HitRanger() {
                     {isNotPhone && <Col style={topLeftColStyle}></Col>}
                     <Col style={rightColStyle}></Col>
                 </Row>
-                <Row>
+                <Row data-aos="fade-up"
+                    data-aos-offset="200"
+                    data-aos-duration="1000"
+                    data-aos-easing="ease-in-out">
                     {isNotPhone && <Col style={leftColStyle}>
                         <div style={locationColWrapperStyle}>
                             <img src={LocationIcon} style={locationIconStyle}></img>
@@ -41,7 +44,10 @@ export default function HitRanger() {
                         </p>
                     </Col>
                 </Row>
-                <Row>
+                <Row data-aos="fade-up"
+                    data-aos-offset="200"
+                    data-aos-duration="1000"
+                    data-aos-easing="ease-in-out">
                     {isNotPhone && <Col style={leftColStyle}>
                         <div style={locationColWrapperStyle}>
                             <img src={LocationIcon} style={locationIconStyle}></img>
@@ -59,7 +65,10 @@ export default function HitRanger() {
                         </p>
                     </Col>
                 </Row>
-                <Row>
+                <Row data-aos="fade-up"
+                    data-aos-offset="200"
+                    data-aos-duration="1000"
+                    data-aos-easing="ease-in-out">
                     {isNotPhone && <Col style={leftColStyle}>
                         <div style={locationColWrapperStyle}>
                             {/* <img src={LocationIcon} style={locationIconStyle}></img>
@@ -76,7 +85,10 @@ export default function HitRanger() {
                         </p>
                     </Col>
                 </Row>
-                <Row>
+                <Row data-aos="fade-up"
+                    data-aos-offset="200"
+                    data-aos-duration="1000"
+                    data-aos-easing="ease-in-out">
                     {isNotPhone && <Col style={leftColStyle}>
                         <div style={locationColWrapperStyle}>
                             <img src={LocationIcon} style={locationIconStyle}></img>
@@ -93,7 +105,10 @@ export default function HitRanger() {
                         </p>
                     </Col>
                 </Row>
-                <Row>
+                <Row data-aos="fade-up"
+                    data-aos-offset="200"
+                    data-aos-duration="1000"
+                    data-aos-easing="ease-in-out">
                     {isNotPhone && <Col style={leftColStyle}>
                         <div style={locationColWrapperStyle}>
                             <img src={LocationIcon} style={locationIconStyle}></img>
@@ -110,7 +125,10 @@ export default function HitRanger() {
                         </p>
                     </Col>
                 </Row>
-                <Row>
+                <Row data-aos="fade-up"
+                    data-aos-offset="200"
+                    data-aos-duration="1000"
+                    data-aos-easing="ease-in-out">
                     {isNotPhone && <Col style={leftColStyle}>
                         <div style={locationColWrapperStyle}>
                             <img src={LocationIcon} style={locationIconStyle}></img>
@@ -126,7 +144,10 @@ export default function HitRanger() {
                         </p>
                     </Col>
                 </Row>
-                <Row>
+                <Row data-aos="fade-up"
+                    data-aos-offset="200"
+                    data-aos-duration="1000"
+                    data-aos-easing="ease-in-out">
                     {isNotPhone && <Col style={leftColStyle}>
                         <div style={locationColWrapperStyle}>
                             {/* <img src={LocationIcon} style={locationIconStyle}></img>
@@ -143,7 +164,10 @@ export default function HitRanger() {
                         </p> */}
                     </Col>
                 </Row>
-                <Row>
+                <Row data-aos="fade-up"
+                    data-aos-offset="200"
+                    data-aos-duration="1000"
+                    data-aos-easing="ease-in-out">
                     {isNotPhone && <Col style={leftColStyle}>
                         <div style={locationColWrapperStyle}>
                             <img src={LocationIcon} style={locationIconStyle}></img>
@@ -160,7 +184,10 @@ export default function HitRanger() {
                         </p>
                     </Col>
                 </Row>
-                <Row>
+                <Row data-aos="fade-up"
+                    data-aos-offset="200"
+                    data-aos-duration="1000"
+                    data-aos-easing="ease-in-out">
                     {isNotPhone && <Col style={leftColStyle}>
                         <div style={locationColWrapperStyle}>
                             <img src={LocationIcon} style={locationIconStyle}></img>
@@ -177,7 +204,10 @@ export default function HitRanger() {
                         </p>
                     </Col>
                 </Row>
-                <Row>
+                <Row data-aos="fade-up"
+                    data-aos-offset="200"
+                    data-aos-duration="1000"
+                    data-aos-easing="ease-in-out">
                     {isNotPhone && <Col style={{...topLeftColStyle, margin: "0.3rem auto"}}></Col>}
                     <Col style={rightColStyle}></Col>
                 </Row>
