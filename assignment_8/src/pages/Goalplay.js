@@ -80,6 +80,7 @@ export default function Goalplay() {
     )
 }
 
+// set width for the bootstrap container
 const projectPageContainerStyle = {
     width: "80vw",
 }
